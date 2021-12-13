@@ -145,8 +145,8 @@ class BGGClient:
                 xml.dictionary('item', [
                     xml.integer(".", attribute="objectid", alias="id"),
                     xml.string("name"),
-                    xml.string("thumbnail", required=False, alias="image"),
-                    xml.string("version/item/thumbnail", required=False, alias="image_version"),
+                    xml.string("image", required=False, alias="image"),
+                    xml.string("version/item/image", required=False, alias="image_version"),
                     xml.dictionary("status", [
                         xml.string(".", attribute="fortrade"),
                         xml.string(".", attribute="own"),

@@ -5,7 +5,7 @@ from mybgg.indexer import Indexer
 
 
 def main(args):
-    SETTINGS = json.load(open("config.json", "rb"))
+    SETTINGS = json.load(open("./config.json", "rb"))
 
     downloader = Downloader(
         project_name=SETTINGS["project"]["name"],
@@ -19,6 +19,10 @@ def main(args):
     num_games = len(collection)
     num_expansions = sum([len(game.expansions) for game in collection])
     print(f"Imported {num_games} games and {num_expansions} expansions from boardgamegeek.")
+    ratings = list(map(lambda bg: bg.rating, collection))
+    none_rating_count = sum(x is None for x in ratings)
+    if none_rating_count > num_games / 2.0:
+        assert False, "Too many games have no rating, is BGG working correctly?"
 
     if not len(collection):
         assert False, "No games imported, is the boardgamegeek part of config.json correctly set?"

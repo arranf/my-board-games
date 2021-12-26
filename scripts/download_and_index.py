@@ -14,7 +14,8 @@ def main(args):
     )
     collection = downloader.collection(
         user_name=SETTINGS["boardgamegeek"]["user_name"],
-        extra_params=SETTINGS["boardgamegeek"]["extra_params"],
+        short_descriptions=SETTINGS["shortdescription"],
+        extra_params=SETTINGS["boardgamegeek"]["extra_params"]
     )
     num_games = len(collection)
     num_expansions = sum([len(game.expansions) for game in collection])

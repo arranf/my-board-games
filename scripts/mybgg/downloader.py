@@ -18,7 +18,7 @@ class Downloader():
                 debug=debug,
             )
 
-    def collection(self, user_name, extra_params):
+    def collection(self, user_name, short_descriptions, extra_params):
         collection_data = []
         plays_data = []
 
@@ -68,7 +68,8 @@ class Downloader():
                 expansions=[
                     BoardGame(expansion_data)
                     for expansion_data in game_id_to_expansion[game_data["id"]]
-                ]
+                ],
+                short_discription=short_descriptions[game_data["id"]]
             )
             for game_data in games_data
         ]

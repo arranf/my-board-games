@@ -1,5 +1,9 @@
 # MyBGG - Search and filter your boardgame collection
 
+
+
+
+
 _This project is meant to be forked. The original project is available here: https://github.com/EmilStenstrom/mybgg_
 
 Using this project, you can set up your own site for searching and filtering your boardgame collection. As an example, have a look at this: https://games.emilstenstrom.se

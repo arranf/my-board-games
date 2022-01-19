@@ -18,7 +18,7 @@ class Downloader():
                 debug=debug,
             )
 
-    def collection(self, user_name, short_descriptions, extra_params):
+    def collection(self, user_name, additional_info, extra_params):
         collection_data = []
         plays_data = []
 
@@ -57,7 +57,7 @@ class Downloader():
             for expansion in expansion_data["expansions"]:
                 if expansion["inbound"] and expansion["id"] in game_id_to_expansion:
                     game_id_to_expansion[expansion["id"]].append(expansion_data)
-
+        
         games = [
             BoardGame(
                 game_data,
@@ -69,7 +69,8 @@ class Downloader():
                     BoardGame(expansion_data)
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
-                short_description=short_descriptions.get(str(game_data["id"]))
+                short_description=additional_info.get(str(game_data["id"]))['short_description'],
+                personal_rank=additional_info.get(str(game_data["id"]))['rank']
             )
             for game_data in games_data
         ]

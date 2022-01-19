@@ -1,3 +1,5 @@
 *.sqlite
 __pycache__
 scripts/venv
+*.csv
+node_modules/

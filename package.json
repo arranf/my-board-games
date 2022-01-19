@@ -1,0 +1,14 @@
+{
+  "name": "my-boardgames",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arranf/mybgg.git",
+  "author": "Arran France <arran@arranfrance.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "boardgamegeekclient": "^1.0.8",
+    "csv-parser": "^3.0.0"
+  }
+}

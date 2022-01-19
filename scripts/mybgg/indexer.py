@@ -23,6 +23,7 @@ class Indexer:
             'searchableAttributes': [
                 'name',
                 'description',
+                'short_description'
             ],
             'attributesForFaceting': [
                 'categories',
@@ -50,6 +51,8 @@ class Indexer:
                 mainIndex.name + '_rank_ascending',
                 mainIndex.name + '_numrated_descending',
                 mainIndex.name + '_numowned_descending',
+                mainIndex.name + '_personal_rank_ascending',
+                mainIndex.name + '_personal_rank_descending'
             ]
         })
 
@@ -61,6 +64,13 @@ class Indexer:
 
         replica_index = client.init_index(mainIndex.name + '_numowned_descending')
         replica_index.set_settings({'ranking': ['desc(numowned)']})
+
+        replica_index = client.init_index(mainIndex.name + '_personal_rank_ascending')
+        replica_index.set_settings({'ranking': ['asc(personal_rank)']})
+
+
+        replica_index = client.init_index(mainIndex.name + '_personal_rank_descending')
+        replica_index.set_settings({'ranking': ['dsc(personal_rank)']})
 
     @staticmethod
     def todict(obj):

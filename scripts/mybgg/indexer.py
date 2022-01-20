@@ -70,7 +70,7 @@ class Indexer:
 
 
         replica_index = client.init_index(mainIndex.name + '_personal_rank_descending')
-        replica_index.set_settings({'ranking': ['dsc(personal_rank)']})
+        replica_index.set_settings({'ranking': ['desc(personal_rank)']})
 
     @staticmethod
     def todict(obj):

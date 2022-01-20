@@ -32,7 +32,9 @@ class BoardGame:
         if game_additional_data is None:
             return
         self.short_description = game_additional_data.get('short_description')
-        self.personal_rank = int(game_additional_data.get('rank'))
+        personal_rank = game_additional_data.get('rank')
+        if personal_rank is not None:
+            self.personal_rank = int(personal_rank)
 
     def calc_num_players(self, game_data, expansions):
         num_players = game_data["suggested_numplayers"].copy()

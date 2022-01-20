@@ -69,8 +69,7 @@ class Downloader():
                     BoardGame(expansion_data)
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
-                short_description=additional_info.get(str(game_data["id"]))['short_description'],
-                personal_rank=additional_info.get(str(game_data["id"]))['rank']
+                additional_info=additional_info
             )
             for game_data in games_data
         ]

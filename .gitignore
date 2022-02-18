@@ -2,4 +2,5 @@
 __pycache__
 scripts/venv
 *.csv
+title-cache.json
 node_modules/

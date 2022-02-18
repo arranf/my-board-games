@@ -12,12 +12,14 @@ function sleep(ms) {
 
 async function main() {
   let config = JSON.parse(fs.readFileSync("./config.json"));
+  
   let titleToIdCacheContents;
   try {
     titleToIdCacheContents = fs.readFileSync("./title-cache.json");
   } catch (e) {
-    // empty catch
+    // empty catch if file doesn't exist
   }
+
   const titleToIdCache = titleToIdCacheContents ? JSON.parse(titleToIdCacheContents) : {};
 
   let data = [];

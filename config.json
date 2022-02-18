@@ -171,6 +171,11 @@
       "rank": "25",
       "name": "Codenames"
     },
+    "180771": {
+      "short_description": "Fight the Foot Clan in an all-vs-Shredder campaign on the streets of New York City.",
+      "name": "Teenage Mutant Ninja Turtles: Shadows of the Past",
+      "rank": "51"
+    },
     "181161": {
       "short_description": "Can you guide another player to build bricks to match a shape shown on a card?",
       "rank": "50",
@@ -275,7 +280,9 @@
       "name": "PARKS"
     },
     "271320": {
-      "short_description": "Build your princedom into a bustling metropolis of commerce."
+      "short_description": "Build your princedom into a bustling metropolis of commerce.",
+      "name": "The Castles of Burgundy",
+      "rank": "14"
     },
     "276894": {
       "short_description": "Ride a London double decker bus when low on time with this 15 minute express version.",

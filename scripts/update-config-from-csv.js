@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 //
 // This script updates the config.json to include ranks from https://rankingengine.pubmeeple.com/
 //
@@ -12,7 +13,7 @@ function sleep(ms) {
 
 async function main() {
   let config = JSON.parse(fs.readFileSync("./config.json"));
-  
+
   let titleToIdCacheContents;
   try {
     titleToIdCacheContents = fs.readFileSync("./title-cache.json");
@@ -20,7 +21,9 @@ async function main() {
     // empty catch if file doesn't exist
   }
 
-  const titleToIdCache = titleToIdCacheContents ? JSON.parse(titleToIdCacheContents) : {};
+  const titleToIdCache = titleToIdCacheContents
+    ? JSON.parse(titleToIdCacheContents)
+    : {};
 
   let data = [];
   await new Promise((fulfill) =>
@@ -32,7 +35,7 @@ async function main() {
       })
       .on("end", fulfill)
   );
-
+  console.log(JSON.stringify(data));
   for (const item of data) {
     const name = item.Item;
     let id;
@@ -43,12 +46,16 @@ async function main() {
         name
       )}&nosession=1&showcount=20`;
       const { data } = await axios.get(url);
+      if (data.items.length === 0) {
+        console.log(`Could not find game for ${name}`);
+        process.exit(1);
+      }
       const gameId = data.items[0].id;
       console.log(`Requesting ${item.Item}`);
       const idString = gameId.toString();
       titleToIdCache[name] = idString;
       id = idString;
-      console.log('Sleeping...')
+      console.log("Sleeping...");
       await sleep(2000);
     }
 

@@ -17,7 +17,7 @@
   "additional": {
     "12333": {
       "short_description": "Relive the Cold War and rewrite history in an epic clash between the USA and USSR.",
-      "rank": "9",
+      "rank": "18",
       "name": "Twilight Struggle"
     },
     "17226": {
@@ -25,22 +25,22 @@
     },
     "18745": {
       "short_description": "Will your dynasty be the one to finally bring unity to China?",
-      "rank": "38",
+      "rank": "62",
       "name": "Sun Tzu"
     },
     "27708": {
       "short_description": "Players act as campaign managers in this replay of the 1960 presidential election.",
-      "rank": "5",
+      "rank": "8",
       "name": "1960: The Making of the President"
     },
     "30549": {
       "short_description": "Your team of experts must prevent the world from succumbing to a viral pandemic.",
-      "rank": "45",
+      "rank": "66",
       "name": "Pandemic"
     },
     "37111": {
       "short_description": "How can the human race survive when you don't know who is actually human?",
-      "rank": "12",
+      "rank": "10",
       "name": "Battlestar Galactica: The Board Game"
     },
     "41114": {
@@ -51,42 +51,42 @@
     },
     "54043": {
       "short_description": "Trade and sell goods to become the most wealthy merchant in this short game for two.",
-      "rank": "13",
+      "rank": "14",
       "name": "Jaipur"
     },
     "54998": {
       "short_description": "Win the favor of the Gods in this competitive auction, area control game.",
-      "rank": "23",
+      "rank": "22",
       "name": "Cyclades"
     },
     "65244": {
       "short_description": "The island is sinking! Will the brave adventurers save the treasures in time?",
-      "rank": "31",
+      "rank": "51",
       "name": "Forbidden Island"
     },
     "68448": {
       "short_description": "Draft cards to develop your ancient civilization and build its Wonder of the World.",
-      "rank": "44",
+      "rank": "34",
       "name": "7 Wonders"
     },
     "93260": {
       "short_description": "Harness the magic! Summon your warrior hordes onto the field of battle.",
-      "rank": "47",
+      "rank": "59",
       "name": "Summoner Wars: Master Set"
     },
     "98778": {
       "short_description": "Everyone can see your cards but you. Can their clues help you find out what to play?",
-      "rank": "10",
+      "rank": "12",
       "name": "Hanabi"
     },
     "103343": {
       "short_description": "Make alliances—and break them!—as you strive to both unite and conquer Westeros.",
-      "rank": "34",
+      "rank": "47",
       "name": "A Game of Thrones: The Board Game (Second Edition)"
     },
     "104162": {
       "short_description": "Fight monsters and upgrade your characters in an all-vs-Overlord fantasy campaign.",
-      "rank": "22",
+      "rank": "36",
       "name": "Descent: Journeys in the Dark (Second Edition)"
     },
     "110327": {
@@ -94,12 +94,12 @@
     },
     "115746": {
       "short_description": "The Fellowship and the Free Peoples clash with Sauron over the fate of Middle-Earth.",
-      "rank": "6",
+      "rank": "15",
       "name": "War of the Ring: Second Edition"
     },
     "118174": {
       "short_description": "Build chemical compounds before the other lab managers and before they explode!",
-      "rank": "35",
+      "rank": "55",
       "name": "Compounded"
     },
     "125153": {
@@ -107,7 +107,7 @@
     },
     "128882": {
       "short_description": "Who can you trust? A game of social deduction set in King Arthur's legendary realm.",
-      "rank": "11",
+      "rank": "20",
       "name": "The Resistance: Avalon"
     },
     "133473": {
@@ -116,7 +116,7 @@
     },
     "138161": {
       "short_description": "Find a crew. Find a job. Keep flying. Cross the 'verse to complete jobs and get paid.",
-      "rank": "32",
+      "rank": "44",
       "name": "Firefly: The Game"
     },
     "144797": {
@@ -124,7 +124,7 @@
     },
     "147949": {
       "short_description": "An app-driven Werewolf that lasts but a single night. Wolves and villagers beware!",
-      "rank": "40",
+      "rank": "71",
       "name": "One Night Ultimate Werewolf"
     },
     "151347": {
@@ -137,22 +137,22 @@
     },
     "156546": {
       "short_description": "This curated version of a classic game is guaranteed to create laughs!",
-      "rank": "27",
+      "rank": "46",
       "name": "Monikers"
     },
     "162886": {
       "short_description": "Island Spirits join forces using elemental powers to defend their home from invaders.",
-      "rank": "20",
+      "rank": "7",
       "name": "Spirit Island"
     },
     "163412": {
       "short_description": "Piece together a quilt and leave no holes to become the button master.",
-      "rank": "24",
+      "rank": "27",
       "name": "Patchwork"
     },
     "164153": {
       "short_description": "Play as Rebel or Imperial forces to fulfil mission objectives.",
-      "rank": "8",
+      "rank": "9",
       "name": "Star Wars: Imperial Assault"
     },
     "167355": {
@@ -160,7 +160,7 @@
     },
     "173346": {
       "short_description": "Science? Military? What will you draft to win this head-to-head version of 7 Wonders?",
-      "rank": "39",
+      "rank": "16",
       "name": "7 Wonders Duel"
     },
     "175640": {
@@ -168,22 +168,22 @@
     },
     "178900": {
       "short_description": "Give your team clever one-word clues to help them spot their agents in the field.",
-      "rank": "25",
+      "rank": "29",
       "name": "Codenames"
     },
     "180771": {
       "short_description": "Fight the Foot Clan in an all-vs-Shredder campaign on the streets of New York City.",
       "name": "Teenage Mutant Ninja Turtles: Shadows of the Past",
-      "rank": "51"
+      "rank": "72"
     },
     "181161": {
       "short_description": "Can you guide another player to build bricks to match a shape shown on a card?",
-      "rank": "50",
+      "rank": "69",
       "name": "Brick Party"
     },
     "181279": {
       "short_description": "Dracula is attacking! Or is it a trick while he hides? Track him down to find out.",
-      "rank": "18",
+      "rank": "21",
       "name": "Fury of Dracula"
     },
     "184267": {
@@ -191,23 +191,25 @@
     },
     "187645": {
       "short_description": "Strike from your hidden base as the Rebels—or find and destroy it as the Empire.",
-      "rank": "4",
+      "rank": "5",
       "name": "Star Wars: Rebellion"
     },
     "192291": {
       "short_description": "Pass sushi around a bigger table and take the best dishes. Save room for dessert!",
-      "rank": "37",
+      "rank": "49",
       "name": "Sushi Go Party!"
     },
     "194655": {
-      "short_description": "Use different divine powers to build and climb the towers!"
+      "short_description": "Use different divine powers to build and climb the towers!",
+      "name": "Santorini",
+      "rank": "68"
     },
     "197831": {
       "short_description": "Kindle the flame; defeat enemies and bosses lest you and your party perish."
     },
     "200147": {
       "short_description": "Harmonize Japanese nature and culture elements to paint the most beautiful landscape.",
-      "rank": "29",
+      "rank": "52",
       "name": "Kanagawa"
     },
     "200511": {
@@ -215,7 +217,7 @@
     },
     "205716": {
       "short_description": "Play as corporations profiteering off crises, while negotiating to not lose it all.",
-      "rank": "33",
+      "rank": "48",
       "name": "New Angeles"
     },
     "210296": {
@@ -231,7 +233,9 @@
       "short_description": "Honor the Gods, build temples, defeat monsters, and establish supremacy over Hellas."
     },
     "223040": {
-      "short_description": "Build the greatest fantasy kingdom by constructing the best hand."
+      "short_description": "Build the greatest fantasy kingdom by constructing the best hand.",
+      "name": "Fantasy Realms",
+      "rank": "4"
     },
     "224517": {
       "short_description": "Build networks, grow industries, and navigate the world of the Industrial Revolution.",
@@ -240,32 +244,51 @@
     },
     "230802": {
       "short_description": "Artfully embellish the walls of your palace by drafting the most beautiful tiles.",
-      "rank": "46",
+      "rank": "33",
       "name": "Azul"
     },
     "233078": {
-      "short_description": "Build an intergalactic empire through trade, research, conquest and grand politics."
+      "short_description": "Build an intergalactic empire through trade, research, conquest and grand politics.",
+      "name": "Twilight Imperium: Fourth Edition",
+      "rank": "13"
     },
     "237182": {
       "short_description": "Decide the fate of the forest as woodland factions fight for contrasting goals."
     },
     "245655": {
       "short_description": "Leaders join in council to vote on the kingdom's issues, but with hidden motives!",
-      "rank": "26",
+      "rank": "37",
       "name": "The King's Dilemma"
     },
     "248562": {
       "short_description": "Command armies, gather spells and artifacts as you conquer a fantasy land."
     },
+    "251442": {
+      "short_description": "Liberate the galaxy from the tyrannical Dynasty! Or find and squash the Liberation! ",
+      "name": "Liberation",
+      "rank": "56"
+    },
+    "251658": {
+      "short_description": "Build the best metropolis by following the planning rules with this 18-card deck.",
+      "name": "Sprawlopolis",
+      "rank": "38"
+    },
     "255984": {
-      "short_description": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea."
+      "short_description": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea.",
+      "name": "Sleeping Gods",
+      "rank": "41"
     },
     "257499": {
       "short_description": "Piece the clues together to stop the horrors before your sanity shatters."
     },
+    "257614": {
+      "short_description": "Victorians knew every flower has a meaning. Which flowers will you choose? ",
+      "name": "Tussie Mussie",
+      "rank": "53"
+    },
     "259061": {
       "short_description": "Draft your heroes and rally your minions to destroy the enemy Nexus.",
-      "rank": "41",
+      "rank": "70",
       "name": "Skytear"
     },
     "262712": {
@@ -276,17 +299,17 @@
     },
     "266524": {
       "short_description": "Hike through National Parks tiles, collecting memories and admiring gorgeous scenery.",
-      "rank": "19",
+      "rank": "32",
       "name": "PARKS"
     },
     "271320": {
       "short_description": "Build your princedom into a bustling metropolis of commerce.",
       "name": "The Castles of Burgundy",
-      "rank": "14"
+      "rank": "6"
     },
     "276894": {
       "short_description": "Ride a London double decker bus when low on time with this 15 minute express version.",
-      "rank": "30",
+      "rank": "42",
       "name": "Ticket to Ride: London"
     },
     "277659": {
@@ -294,12 +317,12 @@
     },
     "277700": {
       "short_description": "Operate your own specialty goods shop with a unique set of components and mechanisms.",
-      "rank": "16",
+      "rank": "40",
       "name": "Merchants Cove"
     },
     "284083": {
       "short_description": "Go on a planet-discovering space mission in this cooperative trick-taking game.",
-      "rank": "21",
+      "rank": "17",
       "name": "The Crew: The Quest for Planet Nine"
     },
     "284378": {
@@ -307,20 +330,25 @@
     },
     "284653": {
       "short_description": "Psychic rogue agents team up to track down the Recruiter in Zanzibar.",
-      "rank": "7",
+      "rank": "11",
       "name": "Mind MGMT: The Psychic Espionage “Game.”"
     },
     "285192": {
       "short_description": "Characters explore a medieval-fantasy land as they race to fulfill their destiny.",
-      "rank": "36",
+      "rank": "58",
       "name": "Destinies"
+    },
+    "285774": {
+      "short_description": "Battle Marvel villains with unique teams of iconic heroes in this LCG.",
+      "name": "Marvel Champions: The Card Game",
+      "rank": "28"
     },
     "285967": {
       "short_description": "Take the role of Egyptian gods fighting to become the one true god."
     },
     "287084": {
       "short_description": "Decide to act early or late to set traps and attack to become the most influential.",
-      "rank": "15",
+      "rank": "26",
       "name": "Oriflamme"
     },
     "291572": {
@@ -334,18 +362,26 @@
     },
     "298047": {
       "short_description": "Cooperate as Marvel Heroes to stop the Villains' master plans!",
-      "rank": "28",
+      "rank": "39",
       "name": "Marvel United"
     },
     "304783": {
-      "short_description": "Compete as one of six Roman Generals in charge of a milecastle along Hadrian's Wall."
+      "short_description": "Compete as one of six Roman Generals in charge of a milecastle along Hadrian's Wall.",
+      "name": "Hadrian's Wall",
+      "rank": "35"
+    },
+    "309110": {
+      "short_description": "Influence the wildlife and arrange their meals, so there is only one animal left."
     },
     "313261": {
       "short_description": "The tussle for the throne intensifies as resentment piles up."
     },
+    "314088": {
+      "short_description": "Add farms to the card-laying experience of Sprawlopolis."
+    },
     "317457": {
       "short_description": "Delight visitors in a park populated by homegrown dinos. Safety waivers recommended!",
-      "rank": "17",
+      "rank": "23",
       "name": "Dinosaur World"
     },
     "318009": {

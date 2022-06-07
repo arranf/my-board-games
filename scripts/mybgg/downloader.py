@@ -42,6 +42,7 @@ class Downloader():
         game_id_to_tags = {game["id"]: game["tags"] for game in collection_data}
         game_id_to_image = {game["id"]: game["image_version"] or game["image"] for game in collection_data}
         game_id_to_numplays = {game["id"]: game["numplays"] for game in collection_data}
+        game_id_to_lastmodified = {game["id"]: game["lastmodified"] for game in collection_data}
 
         game_id_to_players = {game["id"]: [] for game in collection_data}
         for play in plays_data:
@@ -64,6 +65,7 @@ class Downloader():
                 image=game_id_to_image[game_data["id"]],
                 tags=game_id_to_tags[game_data["id"]],
                 numplays=game_id_to_numplays[game_data["id"]],
+                lastmodified = game_id_to_lastmodified[game_data["id"]],
                 previous_players=game_id_to_players[game_data["id"]],
                 expansions=[
                     BoardGame(expansion_data)

@@ -33,6 +33,7 @@ class Indexer:
                 'playing_time',
                 'searchable(previous_players)',
                 'numplays',
+                'lastmodified'
             ],
             'customRanking': ['asc(name)'],
             'highlightPreTag': '<strong class="highlight">',
@@ -52,7 +53,9 @@ class Indexer:
                 mainIndex.name + '_numrated_descending',
                 mainIndex.name + '_numowned_descending',
                 mainIndex.name + '_personal_rank_ascending',
-                mainIndex.name + '_personal_rank_descending'
+                mainIndex.name + '_personal_rank_descending',
+                mainIndex.name + '_lastmodified_ascending',
+                mainIndex.name + '_lastmodified_descending',
             ]
         })
 
@@ -68,10 +71,14 @@ class Indexer:
         replica_index = client.init_index(mainIndex.name + '_personal_rank_ascending')
         replica_index.set_settings({'ranking': ['asc(personal_rank)']})
 
-
         replica_index = client.init_index(mainIndex.name + '_personal_rank_descending')
         replica_index.set_settings({'ranking': ['desc(personal_rank)']})
 
+        replica_index = client.init_index(mainIndex.name + '_lastmodified_ascending')
+        replica_index.set_settings({'ranking': ['asc(lastmodified)']})
+
+        replica_index = client.init_index(mainIndex.name + '_lastmodified_descending')
+        replica_index.set_settings({'ranking': ['desc(lastmodified)']})
     @staticmethod
     def todict(obj):
         if isinstance(obj, str):

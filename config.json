@@ -394,6 +394,36 @@
     },
     "341165": {
       "short_description": "Form alliances, collect spice, avoid worms, enter treacherous battles, control DUNE."
-    }
+    },
+    "291962": {
+      "short_description": "Explore dungeons, fight villains and conquer the glory in a hack n slash adventure."
+    },
+   "291453": {
+     "short_description": "Poach your opponents artists and outdo each other's circus shows."
+   },
+   "223770": {
+     "short_description": "Invest in startups but beware - you only make money by controlling popular companies!"
+   },
+   "345976": {
+     "short_description": "Set in a dystopian future, the race between Megacorporation and Netrunner continues."
+   },
+   "344682": {
+     "short_description": "After the Heist of the Century, a gang splits the loot by playing a brand new game."
+   },
+   "355135": {
+     "short_description": "You can finally take control of a Blaseball team to nudge it to victory."
+   },
+   "290484": {
+     "short_description": "A cooperative survival game in the bizarre and wondrous reaches of deep space."
+   },
+   "23540": {
+     "short_description": "1830 goes to Japan in this financial death match."
+   },
+   "183394": {
+     "short_description": "Create the most prosperous winery in Italy from the Tuscan vineyard you've inherited."
+   },
+   "295374": {
+     "short_description": "Bet, buy horses, and influence jockeys for cash in an exciting 1930's era horse race."
+   }
   }
 }

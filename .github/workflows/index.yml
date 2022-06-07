@@ -32,7 +32,7 @@ jobs:
     - name: Run script if secret is set
       env:
         APIKEY: ${{secrets.APIKEY}}
-        PASSWORD: ${{secret.PASSWORD}}
+        PASSWORD: ${{secrets.PASSWORD}}
       if: env.APIKEY != null && env.PASSWORD != null
       run: |
         python scripts/download_and_index.py --apikey ${{env.APIKEY}} --password ${{env.PASSWORD}}

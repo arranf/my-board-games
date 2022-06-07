@@ -14,6 +14,7 @@ def main(args):
     )
     collection = downloader.collection(
         user_name=SETTINGS["boardgamegeek"]["user_name"],
+        password=args.password,
         additional_info=SETTINGS["additional"],
         extra_params=SETTINGS["boardgamegeek"]["extra_params"]
     )
@@ -53,6 +54,12 @@ if __name__ == '__main__':
         type=str,
         required=True,
         help='The admin api key for your algolia site'
+    )
+    parser.add_argument(
+        '--password',
+        type=str,
+        required=True,
+        help='Your BGG password'
     )
     parser.add_argument(
         '--no_indexing',

@@ -18,7 +18,8 @@ class Downloader():
                 debug=debug,
             )
 
-    def collection(self, user_name, additional_info, extra_params):
+    def collection(self, user_name, password, additional_info, extra_params):
+        self.client.login(user_name=user_name, password=password)
         collection_data = []
         plays_data = []
 
@@ -65,7 +66,7 @@ class Downloader():
                 image=game_id_to_image[game_data["id"]],
                 tags=game_id_to_tags[game_data["id"]],
                 numplays=game_id_to_numplays[game_data["id"]],
-                lastmodified = game_id_to_lastmodified[game_data["id"]],
+                lastmodified = game_id_to_lastmodified[game_data["id"] or '2012-12-25'],
                 previous_players=game_id_to_players[game_data["id"]],
                 expansions=[
                     BoardGame(expansion_data)

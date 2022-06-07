@@ -9,7 +9,7 @@ python scripts/download_and_index.py --apikey YOUR_ALGOLIA_ADMIN_API_KEY`
 
 ## Running (debug)
 
-`python scripts/download_and_index.py --no_indexing --apikey fake`
+`python scripts/download_and_index.py --no_indexing --apikey fake ---password yourpassword`
 
 ## Updating Rankings
 

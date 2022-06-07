@@ -1,3 +1,4 @@
+import json
 import logging
 import time
 from xml.etree.ElementTree import fromstring
@@ -20,10 +21,19 @@ class BGGClient:
         if debug:
             logging.basicConfig(level=logging.DEBUG)
 
+    def login(self, user_name, password):
+        headers = {'Content-Type': 'application/json'}
+        response = self.requester.post('https://boardgamegeek.com/login/api/v1', json={'credentials':{'username': user_name, 'password': password}}, headers=headers)
+        if response.status_code != 204:
+            raise BGGException(
+                f"BGG returned status code {response.status_code} when requesting {response.url}"
+            )
+
+
     def collection(self, user_name, **kwargs):
         params = kwargs.copy()
         params["username"] = user_name
-        data = self._make_request("/collection?version=1", params)
+        data = self._make_request("/collection?version=1&showprivate=1", params)
         collection = self._collection_to_games(data)
         return collection
 
@@ -157,7 +167,7 @@ class BGGClient:
                         xml.string(".", attribute="wanttoplay"),
                         xml.string(".", attribute="wishlist"),
                     ], alias='tags', hooks=xml.Hooks(after_parse=after_status_hook)),
-                    xml.string("status", attribute="lastmodified", required=True, alias="lastmodified"),
+                    xml.string("privateinfo", attribute="acquisitiondate", required=False, alias="lastmodified"),
                     xml.integer("numplays"),
                 ], required=False, alias="items"),
             )

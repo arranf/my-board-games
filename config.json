@@ -374,7 +374,8 @@
       "short_description": "Influence the wildlife and arrange their meals, so there is only one animal left."
     },
     "313261": {
-      "short_description": "The tussle for the throne intensifies as resentment piles up."
+      "short_description": "The tussle for the throne intensifies as resentment piles up.",
+      "base_game_id": 287084
     },
     "314088": {
       "short_description": "Add farms to the card-laying experience of Sprawlopolis."
@@ -445,6 +446,9 @@
    },
    "160610": {
     "short_description": "Never give in, at any cost! Coordinate your efforts to foil vile plots."
+   },
+   "342562": {
+    "short_description": "In the far reaches of space where humankind still dares not go, a ROVE is deployed."
    }
   }
 }

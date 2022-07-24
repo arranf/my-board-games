@@ -51,6 +51,14 @@ class Downloader():
                 game_id_to_players[play["game"]["gameid"]].extend(play["players"])
                 game_id_to_players[play["game"]["gameid"]] = list(set(game_id_to_players[play["game"]["gameid"]]))
 
+        # Handle custom mapping of games as expansions
+        if additional_info is not None:
+            for game_data in game_list_data:
+                additional_game_info = additional_info.get(str(game_data["id"]))
+                if additional_game_info is not None and "base_game_id" in additional_game_info:
+                     game_data["type"] = "boardgameexpansion"
+                     game_data["expansions"] = [{"inbound": True, "id": additional_game_info["base_game_id"]}]
+
         games_data = list(filter(lambda x: x["type"] == "boardgame", game_list_data))
         expansions_data = list(filter(lambda x: x["type"] == "boardgameexpansion", game_list_data))
 
@@ -59,7 +67,7 @@ class Downloader():
             for expansion in expansion_data["expansions"]:
                 if expansion["inbound"] and expansion["id"] in game_id_to_expansion:
                     game_id_to_expansion[expansion["id"]].append(expansion_data)
-        
+
         games = [
             BoardGame(
                 game_data,
@@ -72,7 +80,7 @@ class Downloader():
                     BoardGame(expansion_data)
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
-                additional_info=additional_info
+                additional_info=None if additional_info is None else additional_info.get(str(game_data["id"]))
             )
             for game_data in games_data
         ]

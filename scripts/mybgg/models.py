@@ -28,12 +28,8 @@ class BoardGame:
 
         if additional_info is None:
             return
-
-        game_additional_data=additional_info.get(str(self.id))
-        if game_additional_data is None:
-            return
-        self.short_description = game_additional_data.get('short_description')
-        personal_rank = game_additional_data.get('rank')
+        self.short_description = additional_info.get('short_description')
+        personal_rank = additional_info.get('rank')
         if personal_rank is not None:
             self.personal_rank = int(personal_rank)
 

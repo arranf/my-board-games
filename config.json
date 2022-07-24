@@ -424,6 +424,27 @@
    },
    "295374": {
      "short_description": "Bet, buy horses, and influence jockeys for cash in an exciting 1930's era horse race."
+   },
+   "335664": {
+    "short_description": "Why roll and write, when you can roll and FIGHT?"
+   },
+   "335240": {
+    "short_description": "Why roll and write, when you can roll and FIGHT?"
+   },
+   "262211": {
+    "short_description": "Use towers, minions, and heroes to help your faction claim an island in the sky."
+   },
+   "246192": {
+    "short_description": "Gather energy marbles to build gizmos parts and trigger chain reactions and combos."
+   },
+   "300521": {
+    "short_description": "Heroes try to escape the dungeon while the Sorcerer uses his magic to stop them."
+   },
+   "221248": {
+    "base_game_id": 156546
+   },
+   "160610": {
+    "short_description": "Never give in, at any cost! Coordinate your efforts to foil vile plots."
    }
   }
 }

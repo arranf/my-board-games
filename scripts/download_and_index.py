@@ -18,6 +18,7 @@ def main(args):
         additional_info=SETTINGS["additional"],
         extra_params=SETTINGS["boardgamegeek"]["extra_params"]
     )
+    
     num_games = len(collection)
     num_expansions = sum([len(game.expansions) for game in collection])
     print(f"Imported {num_games} games and {num_expansions} expansions from boardgamegeek.")
@@ -75,7 +76,7 @@ if __name__ == '__main__':
         action='store_true',
         help=(
             "Enable a cache for all BGG calls. This makes script run very "
-            "fast the second time it's run. Bug doesn't fetch new data från BGG."
+            "fast the second time it's run. Bug doesn't fetch new data from BGG."
         )
     )
     parser.add_argument(

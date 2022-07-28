@@ -17,7 +17,7 @@
   "additional": {
     "12333": {
       "short_description": "Relive the Cold War and rewrite history in an epic clash between the USA and USSR.",
-      "rank": "21",
+      "rank": "20",
       "name": "Twilight Struggle"
     },
     "17226": {
@@ -25,7 +25,7 @@
     },
     "18745": {
       "short_description": "Will your dynasty be the one to finally bring unity to China?",
-      "rank": "60",
+      "rank": "61",
       "name": "Sun Tzu"
     },
     "23540": {
@@ -43,7 +43,7 @@
     },
     "37111": {
       "short_description": "How can the human race survive when you don't know who is actually human?",
-      "rank": "30",
+      "rank": "29",
       "name": "Battlestar Galactica: The Board Game"
     },
     "41114": {
@@ -54,32 +54,32 @@
     },
     "54043": {
       "short_description": "Trade and sell goods to become the most wealthy merchant in this short game for two.",
-      "rank": "20",
+      "rank": "19",
       "name": "Jaipur"
     },
     "54998": {
       "short_description": "Win the favor of the Gods in this competitive auction, area control game.",
-      "rank": "19",
+      "rank": "18",
       "name": "Cyclades"
     },
     "65244": {
       "short_description": "The island is sinking! Will the brave adventurers save the treasures in time?",
-      "rank": "63",
+      "rank": "64",
       "name": "Forbidden Island"
     },
     "68448": {
       "short_description": "Draft cards to develop your ancient civilization and build its Wonder of the World.",
-      "rank": "51",
+      "rank": "52",
       "name": "7 Wonders"
     },
     "93260": {
       "short_description": "Harness the magic! Summon your warrior hordes onto the field of battle.",
-      "rank": "53",
+      "rank": "54",
       "name": "Summoner Wars: Master Set"
     },
     "98778": {
       "short_description": "Everyone can see your cards but you. Can their clues help you find out what to play?",
-      "rank": "16",
+      "rank": "15",
       "name": "Hanabi"
     },
     "103343": {
@@ -89,7 +89,7 @@
     },
     "104162": {
       "short_description": "Fight monsters and upgrade your characters in an all-vs-Overlord fantasy campaign.",
-      "rank": "55",
+      "rank": "56",
       "name": "Descent: Journeys in the Dark (Second Edition)"
     },
     "110327": {
@@ -127,7 +127,7 @@
     },
     "147949": {
       "short_description": "An app-driven Werewolf that lasts but a single night. Wolves and villagers beware!",
-      "rank": "62",
+      "rank": "63",
       "name": "One Night Ultimate Werewolf"
     },
     "151347": {
@@ -140,7 +140,7 @@
     },
     "156546": {
       "short_description": "This curated version of a classic game is guaranteed to create laughs!",
-      "rank": "57",
+      "rank": "58",
       "name": "Monikers"
     },
     "160610": {
@@ -166,7 +166,7 @@
     },
     "173346": {
       "short_description": "Science? Military? What will you draft to win this head-to-head version of 7 Wonders?",
-      "rank": "15",
+      "rank": "14",
       "name": "7 Wonders Duel"
     },
     "175640": {
@@ -195,7 +195,7 @@
     "183394": {
       "short_description": "Create the most prosperous winery in Italy from the Tuscan vineyard you've inherited.",
       "name": "Viticulture Essential Edition",
-      "rank": "24"
+      "rank": "23"
     },
     "184267": {
       "short_description": "Be a part of the first Martian colony, striving to be the best contributor."
@@ -207,7 +207,7 @@
     },
     "192291": {
       "short_description": "Pass sushi around a bigger table and take the best dishes. Save room for dessert!",
-      "rank": "56",
+      "rank": "57",
       "name": "Sushi Go Party!"
     },
     "194655": {
@@ -248,12 +248,12 @@
     "222509": {
       "short_description": "Honor the Gods, build temples, defeat monsters, and establish supremacy over Hellas.",
       "name": "Lords of Hellas",
-      "rank": "17"
+      "rank": "16"
     },
     "223040": {
       "short_description": "Build the greatest fantasy kingdom by constructing the best hand.",
       "name": "Fantasy Realms",
-      "rank": "6"
+      "rank": "7"
     },
     "223770": {
       "short_description": "Invest in startups but beware - you only make money by controlling popular companies!",
@@ -304,7 +304,7 @@
     "255984": {
       "short_description": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea.",
       "name": "Sleeping Gods",
-      "rank": "26"
+      "rank": "25"
     },
     "257499": {
       "short_description": "Piece the clues together to stop the horrors before your sanity shatters."
@@ -340,7 +340,7 @@
     },
     "276894": {
       "short_description": "Ride a London double decker bus when low on time with this 15 minute express version.",
-      "rank": "61",
+      "rank": "62",
       "name": "Ticket to Ride: London"
     },
     "277659": {
@@ -348,7 +348,7 @@
     },
     "277700": {
       "short_description": "Operate your own specialty goods shop with a unique set of components and mechanisms.",
-      "rank": "23",
+      "rank": "22",
       "name": "Merchants Cove"
     },
     "284083": {
@@ -359,11 +359,11 @@
     "284378": {
       "short_description": "EV-factory workers optimize and innovate to stand out at the big board meeting.",
       "name": "Kanban EV",
-      "rank": "18"
+      "rank": "17"
     },
     "284653": {
       "short_description": "Psychic rogue agents team up to track down the Recruiter in Zanzibar.",
-      "rank": "22",
+      "rank": "21",
       "name": "Mind MGMT: The Psychic Espionage “Game.”"
     },
     "285192": {
@@ -374,7 +374,7 @@
     "285774": {
       "short_description": "Battle Marvel villains with unique teams of iconic heroes in this LCG.",
       "name": "Marvel Champions: The Card Game",
-      "rank": "35"
+      "rank": "34"
     },
     "285967": {
       "short_description": "Take the role of Egyptian gods fighting to become the one true god."
@@ -406,14 +406,14 @@
     "295374": {
       "short_description": "Bet, buy horses, and influence jockeys for cash in an exciting 1930's era horse race.",
       "name": "Long Shot: The Dice Game",
-      "rank": "14"
+      "rank": "26"
     },
     "297562": {
       "short_description": "Play as warring Egyptian Gods and build the most powerful army to dominate Egypt."
     },
     "298047": {
       "short_description": "Cooperate as Marvel Heroes to stop the Villains' master plans!",
-      "rank": "64",
+      "rank": "50",
       "name": "Marvel United"
     },
     "300521": {
@@ -429,7 +429,7 @@
     "309110": {
       "short_description": "Influence the wildlife and arrange their meals, so there is only one animal left.",
       "name": "Food Chain Island",
-      "rank": "25"
+      "rank": "24"
     },
     "313261": {
       "short_description": "The tussle for the throne intensifies as resentment piles up.",
@@ -455,7 +455,8 @@
       "short_description": "Why roll and write, when you can roll and FIGHT?"
     },
     "335664": {
-      "short_description": "Why roll and write, when you can roll and FIGHT?"
+      "short_description": "Why roll and write, when you can roll and FIGHT?",
+      "base_game_id": 335664
     },
     "341165": {
       "short_description": "Form alliances, collect spice, avoid worms, enter treacherous battles, control DUNE."
@@ -471,7 +472,7 @@
     "345976": {
       "short_description": "Set in a dystopian future, the race between Megacorporation and Netrunner continues.",
       "name": "System Gateway (fan expansion for Android: Netrunner)",
-      "rank": "7"
+      "rank": "6"
     },
     "355135": {
       "short_description": "You can finally take control of a Blaseball team to nudge it to victory."

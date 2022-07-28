@@ -1,4 +1,4 @@
-# MyBGG
+# My Board Games
 
 ## Setup
 

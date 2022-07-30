@@ -23,7 +23,7 @@ class Indexer:
             'searchableAttributes': [
                 'name',
                 'description',
-                'short_description'
+                'tagline'
             ],
             'attributesForFaceting': [
                 'categories',

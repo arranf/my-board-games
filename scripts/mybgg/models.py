@@ -24,11 +24,11 @@ class BoardGame:
         self.expansions = expansions
 
         self.personal_rank = None
-        self.short_description = None
+        self.tagline = None
 
         if additional_info is None:
             return
-        self.short_description = additional_info.get('short_description')
+        self.tagline = additional_info.get('tagline')
         personal_rank = additional_info.get('rank')
         if personal_rank is not None:
             self.personal_rank = int(personal_rank)

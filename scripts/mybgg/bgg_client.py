@@ -33,7 +33,7 @@ class BGGClient:
     def collection(self, user_name, **kwargs):
         params = kwargs.copy()
         params["username"] = user_name
-        data = self._make_request("/collection?version=1&showprivate=1", params)
+        data = self._make_request("/collection?version=1&showprivate=1&stats=1", params)
         collection = self._collection_to_games(data)
         return collection
 
@@ -157,6 +157,7 @@ class BGGClient:
                     xml.string("name"),
                     xml.string("image", required=False, alias="image"),
                     xml.string("version/item/image", required=False, alias="image_version"),
+                    xml.string("stats/rating", required=False, attribute="value", alias="personal_rating"),
                     xml.dictionary("status", [
                         xml.string(".", attribute="fortrade"),
                         xml.string(".", attribute="own"),

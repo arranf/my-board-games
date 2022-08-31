@@ -16,7 +16,7 @@ idna==2.10
     # via requests
 meilisearch==0.19.1
     # via -r requirements.in
-pillow==9.0.0
+pillow==9.0.1
     # via colorgram-py
 requests==2.25.1
     # via

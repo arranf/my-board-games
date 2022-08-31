@@ -5,7 +5,8 @@ import time
 
 import colorgram
 import requests
-from algoliasearch.search_client import SearchClient
+import meilisearch
+
 # Allow colorgram to read truncated files
 from PIL import Image, ImageFile
 
@@ -13,73 +14,28 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 class Indexer:
 
-    def __init__(self, app_id, apikey, index_name, hits_per_page):
-        client = SearchClient.create(
-            app_id=app_id,
-            api_key=apikey,
-        )
-        index = client.init_index(index_name)
+    def __init__(self, app_address, apikey, index_name):
 
-        index.set_settings({
+        client = meilisearch.Client(app_address, apikey)
+        index = client.index(index_name)
+        
+        index.update_settings({
+            'filterableAttributes': [
+                'players.level1',
+                'players.level2',
+                'players.level3',
+                'playing_time',
+                'weight'
+            ],
             'searchableAttributes': [
                 'name',
                 'description',
                 'tagline'
             ],
-            'attributesForFaceting': [
-                'categories',
-                'mechanics',
-                'players',
-                'weight',
-                'playing_time',
-                'searchable(previous_players)',
-                'numplays',
-                'lastmodified'
-            ],
-            'customRanking': ['asc(name)'],
-            'highlightPreTag': '<strong class="highlight">',
-            'highlightPostTag': '</strong>',
-            'hitsPerPage': hits_per_page,
+            "sortableAttributes": ["name", "lastmodified", "rank", "personal_rank", "rating", "personal_rating"]
         })
-
-        self._init_replicas(client, index)
-
         self.index = index
 
-    def _init_replicas(self, client, mainIndex):
-
-        mainIndex.set_settings({
-            'replicas': [
-                mainIndex.name + '_rank_ascending',
-                mainIndex.name + '_numrated_descending',
-                mainIndex.name + '_numowned_descending',
-                mainIndex.name + '_personal_rank_ascending',
-                mainIndex.name + '_personal_rank_descending',
-                mainIndex.name + '_lastmodified_ascending',
-                mainIndex.name + '_lastmodified_descending',
-            ]
-        })
-
-        replica_index = client.init_index(mainIndex.name + '_rank_ascending')
-        replica_index.set_settings({'ranking': ['asc(rank)']})
-
-        replica_index = client.init_index(mainIndex.name + '_numrated_descending')
-        replica_index.set_settings({'ranking': ['desc(usersrated)']})
-
-        replica_index = client.init_index(mainIndex.name + '_numowned_descending')
-        replica_index.set_settings({'ranking': ['desc(numowned)']})
-
-        replica_index = client.init_index(mainIndex.name + '_personal_rank_ascending')
-        replica_index.set_settings({'ranking': ['asc(personal_rank)']})
-
-        replica_index = client.init_index(mainIndex.name + '_personal_rank_descending')
-        replica_index.set_settings({'ranking': ['desc(personal_rank)']})
-
-        replica_index = client.init_index(mainIndex.name + '_lastmodified_ascending')
-        replica_index.set_settings({'ranking': ['asc(lastmodified)']})
-
-        replica_index = client.init_index(mainIndex.name + '_lastmodified_descending')
-        replica_index.set_settings({'ranking': ['desc(lastmodified)']})
     @staticmethod
     def todict(obj):
         if isinstance(obj, str):
@@ -180,16 +136,21 @@ class Indexer:
                 tweaked_expansion_name = tweaked_expansion_name.replace(game_name_prefix + ": ", "")
         
         # Netrunner
-        if " (fan expansion for Android: Netrunner)" in tweaked_expansion_name:
-            tweaked_expansion_name = tweaked_expansion_name.replace(" (fan expansion for Android: Netrunner)", "")
-        elif " (Fan expansion for Android: Netrunner)" in tweaked_expansion_name:
-            tweaked_expansion_name = tweaked_expansion_name.replace(" (Fan expansion for Android: Netrunner)", "")
+        if "(fan expansion for Android: Netrunner)" in tweaked_expansion_name:
+            tweaked_expansion_name = tweaked_expansion_name.replace("(fan expansion for Android: Netrunner)", "")
+        elif "(Fan expansion for Android: Netrunner)" in tweaked_expansion_name:
+            tweaked_expansion_name = tweaked_expansion_name.replace("(Fan expansion for Android: Netrunner)", "")
+        elif "(fan expansion for Netrunner)" in tweaked_expansion_name:
+            tweaked_expansion_name = tweaked_expansion_name.replace("(fan expansion for Netrunner)", "")
+        elif "(Fan expansion for Netrunner)" in tweaked_expansion_name:
+            tweaked_expansion_name = tweaked_expansion_name.replace("(Fan expansion for Netrunner)", "")
 
         # Mini-Expansion
         if "Mini-Expansion" in tweaked_expansion_name:
             tweaked_expansion_name = tweaked_expansion_name.replace("Mini-Expansion", "")
         elif "Mini Expansion" in tweaked_expansion_name:
             tweaked_expansion_name = tweaked_expansion_name.replace("Mini Expansion", "")
+        # Expansion
         elif tweaked_expansion_name.endswith("Expansion"):
             tweaked_expansion_name = tweaked_expansion_name.replace("Expansion", "")
 
@@ -211,8 +172,8 @@ class Indexer:
     def add_objects(self, collection):
         games = [Indexer.todict(game) for game in collection]
         for i, game in enumerate(games):
-            if i != 0 and i % 25 == 0:
-                print(f"Indexed {i} of {len(games)} games...")
+            if i != 0 and i % 10 == 0:
+                print(f"Evaluated {i} of {len(games)} games...")
 
             if game["image"]:
                 image_data = self.fetch_image(game["image"])
@@ -250,7 +211,7 @@ class Indexer:
                 for num, type_ in game["players"]
             ]
 
-            # Algolia has a limit of 10kb per item, so remove unnessesary data from expansions
+            # Remove unnessesary data from expansions
             attribute_map = {
                 "id": lambda x: x,
                 "name": lambda x: self._remove_game_name_prefix(x, game["name"]),
@@ -268,10 +229,10 @@ class Indexer:
             # Make sure description is not too long
             game["description"] = self._prepare_description(game["description"])
 
-        self.index.save_objects(games)
+        self.index.add_documents(games)
 
     def delete_objects_not_in(self, collection):
-        delete_filter = " AND ".join([f"id != {game.id}" for game in collection])
-        self.index.delete_by({
-            'filters': delete_filter,
-        })
+        docs = self.index.get_documents({'limit':1000, 'fields': 'id'})
+        collection_ids = [x.id for x in collection]
+        ids_to_delete = [x["id"] for x in docs["results"] if x["id"] not in collection_ids]
+        self.index.delete_documents([ids_to_delete])

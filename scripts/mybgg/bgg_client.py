@@ -156,6 +156,7 @@ class BGGClient:
                     xml.integer(".", attribute="objectid", alias="id"),
                     xml.string("name"),
                     xml.string("image", required=False, alias="image"),
+                    xml.string("thumbnail", required=False, alias="thumbnail"),
                     xml.string("version/item/image", required=False, alias="image_version"),
                     xml.string("stats/rating", required=False, attribute="value", alias="personal_rating"),
                     xml.dictionary("status", [

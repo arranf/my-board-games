@@ -8,11 +8,9 @@
       "own": 1
     }
   },
-  "algolia": {
-    "app_id": "DS3H5ZZC3L",
-    "api_key_search_only": "df3ea87860cc4dd53c139f7199b38d44",
-    "index_name": "games",
-    "hits_per_page": 24
+  "meilisearch": {
+    "app_address": "https://search.arranfrance.com",
+    "index_name": "games"
   },
   "additional": {
     "12333": {
@@ -495,11 +493,11 @@
       "tagline": "Lead your faction to take out rivals and collect magic crystals in this arena battler."
     },
     "257145": {
-      "tagline": "Go head to head or co-op in part two of the TMNT dice sharing, card playing brawler."
+      "tagline": "Go head to head or co-op in part two of the TMNT dice sharing, card playing brawler.",
+      "base_game_id": 263192
     },
     "263192": {
-      "tagline": "The Turtles band together as they brawl their way through their origin story.",
-      "base_game_id": 257145
+      "tagline": "The Turtles band together as they brawl their way through their origin story."
     },
     "295947": {
       "tagline": "Create the most harmonious ecosystem as you puzzle together habitats and wildlife."

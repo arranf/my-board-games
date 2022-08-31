@@ -4,7 +4,7 @@
 
 ```sh
 pip install -r scripts/requirements.txt
-python scripts/download_and_index.py --apikey YOUR_ALGOLIA_ADMIN_API_KEY`
+python scripts/download_and_index.py --apikey YOUR_MEILISEARCH_ADMIN_API_KEY`
 ```
 
 ## Running (debug)

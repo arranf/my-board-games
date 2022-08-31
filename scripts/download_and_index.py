@@ -31,17 +31,15 @@ def main(args):
         assert False, "No games imported, is the boardgamegeek part of config.json correctly set?"
 
     if not args.no_indexing:
-        hits_per_page = SETTINGS["algolia"].get("hits_per_page", 48)
         indexer = Indexer(
-            app_id=SETTINGS["algolia"]["app_id"],
+            app_address=SETTINGS["meilisearch"]["app_address"],
             apikey=args.apikey,
-            index_name=SETTINGS["algolia"]["index_name"],
-            hits_per_page=hits_per_page,
+            index_name=SETTINGS["meilisearch"]["index_name"],
         )
         indexer.add_objects(collection)
         indexer.delete_objects_not_in(collection)
 
-        print(f"Indexed {num_games} games and {num_expansions} expansions in algolia, and removed everything else.")
+        print(f"Indexed {num_games} games and {num_expansions} expansions in meilisearch, and removed everything else.")
     else:
         print("Skipped indexing.")
 
@@ -54,7 +52,7 @@ if __name__ == '__main__':
         '--apikey',
         type=str,
         required=True,
-        help='The admin api key for your algolia site'
+        help='The admin api key for your meilisearch site'
     )
     parser.add_argument(
         '--password',
@@ -66,9 +64,9 @@ if __name__ == '__main__':
         '--no_indexing',
         action='store_true',
         help=(
-            "Skip indexing in algolia. This is useful during development"
-            ", when you want to fetch data från BGG over and over again, "
-            "and don't want to use up your indexing quota with Algolia."
+            "Skip indexing in meilisearch. This is useful during development"
+            ", when you want to fetch data from BGG over and over again, "
+            "and don't want to use up your indexing quota with meilisearch."
         )
     )
     parser.add_argument(

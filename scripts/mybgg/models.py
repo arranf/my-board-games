@@ -3,7 +3,7 @@ import html
 
 
 class BoardGame:
-    def __init__(self, game_data, personal_rating="", image="", lastmodified='', tags=[], numplays=0, previous_players=[], expansions=[], additional_info=None):
+    def __init__(self, game_data, personal_rating="", image="", thumbnail = "", lastmodified='', tags=[], numplays=0, previous_players=[], expansions=[], additional_info=None):
         self.id = game_data["id"]
         self.name = game_data["name"]
         self.description = html.unescape(game_data["description"])
@@ -20,6 +20,7 @@ class BoardGame:
         self.lastmodified = lastmodified
         self.numplays = numplays
         self.image = image
+        self.thumbnail = thumbnail
         self.tags = tags
         self.previous_players = previous_players
         self.expansions = expansions
@@ -64,26 +65,27 @@ class BoardGame:
         if not game_data["rank"] or game_data["rank"] == "Not Ranked":
             return None
 
-        return Decimal(game_data["rank"])
+        return int(game_data["rank"])
 
     def calc_usersrated(self, game_data):
         if not game_data["usersrated"]:
             return 0
 
-        return Decimal(game_data["usersrated"])
+        return int(game_data["usersrated"])
 
     def calc_numowned(self, game_data):
         if not game_data["numowned"]:
             return 0
 
-        return Decimal(game_data["numowned"])
+        return int(game_data["numowned"])
 
     def calc_rating(self, game_data):
         if not game_data["rating"]:
             return None
 
-        return Decimal(game_data["rating"])
+        return float(game_data["rating"])
 
+    # Todo: Improve this
     def calc_weight(self, game_data):
         weight_mapping = {
             0: "Light",

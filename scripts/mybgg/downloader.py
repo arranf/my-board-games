@@ -43,6 +43,7 @@ class Downloader():
         game_id_to_personal_rating = {game["id"]: game["personal_rating"] for game in collection_data}
         game_id_to_tags = {game["id"]: game["tags"] for game in collection_data}
         game_id_to_image = {game["id"]: game["image_version"] or game["image"] for game in collection_data}
+        game_id_to_thumbnail = {game["id"]: game["thumbnail"] for game in collection_data}
         game_id_to_numplays = {game["id"]: game["numplays"] for game in collection_data}
         game_id_to_lastmodified = {game["id"]: game["lastmodified"] for game in collection_data}
 
@@ -74,6 +75,7 @@ class Downloader():
                 game_data,
                 personal_rating=game_id_to_personal_rating[game_data["id"]],
                 image=game_id_to_image[game_data["id"]],
+                thumbnail=game_id_to_thumbnail[game_data["id"]],
                 tags=game_id_to_tags[game_data["id"]],
                 numplays=game_id_to_numplays[game_data["id"]],
                 lastmodified = game_id_to_lastmodified[game_data["id"] or '2012-12-25'],

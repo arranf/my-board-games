@@ -471,7 +471,12 @@
     },
     "345976": {
       "tagline": "Set in a dystopian future, the race between Megacorporation and Netrunner continues.",
-      "name": "System Gateway (fan expansion for Android: Netrunner)",
+      "name": "System Gateway",
+      "rank": "6",
+      "base_game_id": 124742
+    },
+    "124742": {
+      "tagline": "Megacorporation versus Netrunner in this futuristic cyberpunk game of cat and mouse.",
       "rank": "6"
     },
     "355135": {
@@ -482,6 +487,22 @@
     }, 
     "12942": {
       "tagline": "Take a card each round, or pay to say no; grab the right cards to lower your score."
+    },
+    "220367": {
+      "tagline": "Magic railroad companies race to deliver goods."
+    },
+    "244654": {
+      "tagline": "Lead your faction to take out rivals and collect magic crystals in this arena battler."
+    },
+    "257145": {
+      "tagline": "Go head to head or co-op in part two of the TMNT dice sharing, card playing brawler."
+    },
+    "263192": {
+      "tagline": "The Turtles band together as they brawl their way through their origin story.",
+      "base_game_id": 257145
+    },
+    "295947": {
+      "tagline": "Create the most harmonious ecosystem as you puzzle together habitats and wildlife."
     }
   }
 }

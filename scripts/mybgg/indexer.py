@@ -151,14 +151,19 @@ class Indexer:
         def remove_prefix(text, prefix):
             if text.startswith(prefix):
                 return text[len(prefix):]
+            return text
 
         tweaked_expansion_name = expansion_name
 
         # Expansion name: Long Shot: The Dice Game – Horse Set 4 Mini-Expansion
         # Game name: Long Shot: The Dice Game 
         # --> Horse Set 4 Mini-Expansion
-        if game_name + " – " in expansion_name:
-            tweaked_expansion_name = remove_prefix(expansion_name, game_name + " - ")
+        if game_name + "– " in expansion_name:
+            tweaked_expansion_name = remove_prefix(expansion_name, game_name + " – ")
+
+        # Marvel Champions: The Card Game – Ant-Man Hero Pack
+        elif game_name + " – " in expansion_name:
+            tweaked_expansion_name = remove_prefix(expansion_name, game_name + " – ")
 
         # Expansion name: Catan: Cities & Knights
         # Game name: Catan
@@ -172,21 +177,21 @@ class Indexer:
         elif ":" in game_name:
             game_name_prefix = game_name[0:game_name.index(":")]
             if game_name_prefix + ": " in expansion_name:
-                tweaked_expansion_name.replace(game_name_prefix + ": ", "")
+                tweaked_expansion_name = tweaked_expansion_name.replace(game_name_prefix + ": ", "")
         
         # Netrunner
         if " (fan expansion for Android: Netrunner)" in tweaked_expansion_name:
-            tweaked_expansion_name.replace(" (fan expansion for Android: Netrunner)", "")
+            tweaked_expansion_name = tweaked_expansion_name.replace(" (fan expansion for Android: Netrunner)", "")
         elif " (Fan expansion for Android: Netrunner)" in tweaked_expansion_name:
-            tweaked_expansion_name.replace(" (Fan expansion for Android: Netrunner)", "")
+            tweaked_expansion_name = tweaked_expansion_name.replace(" (Fan expansion for Android: Netrunner)", "")
 
         # Mini-Expansion
         if "Mini-Expansion" in tweaked_expansion_name:
-            tweaked_expansion_name.replace("Mini-Expansion", "")
+            tweaked_expansion_name = tweaked_expansion_name.replace("Mini-Expansion", "")
         elif "Mini Expansion" in tweaked_expansion_name:
-            tweaked_expansion_name.replace("Mini Expansion", "")
+            tweaked_expansion_name = tweaked_expansion_name.replace("Mini Expansion", "")
         elif tweaked_expansion_name.endswith("Expansion"):
-            tweaked_expansion_name.replace("Expansion", "")
+            tweaked_expansion_name = tweaked_expansion_name.replace("Expansion", "")
 
         return tweaked_expansion_name.strip()
 

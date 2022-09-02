@@ -144,6 +144,9 @@ class Indexer:
             tweaked_expansion_name = tweaked_expansion_name.replace("(fan expansion for Netrunner)", "")
         elif "(Fan expansion for Netrunner)" in tweaked_expansion_name:
             tweaked_expansion_name = tweaked_expansion_name.replace("(Fan expansion for Netrunner)", "")
+        # Guards of Atlantis
+        elif "Tabletop MOBA –" in tweaked_expansion_name:
+            tweaked_expansion_name = tweaked_expansion_name.replace("Tabletop MOBA –", "")
 
         # Mini-Expansion
         if "Mini-Expansion" in tweaked_expansion_name:

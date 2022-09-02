@@ -7,8 +7,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "axios": "^0.25.0",
-    "boardgamegeekclient": "^1.0.8",
+    "axios": "^0.27.2",
+    "boardgamegeekclient": "^1.6.0",
     "csv-parser": "^3.0.0"
   }
 }

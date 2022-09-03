@@ -85,11 +85,11 @@ class BoardGame:
 
         return float(game_data["rating"])
     
-    def calc_personal_rating(self, game_data):
-        if not game_data["personal_rating"]:
+    def calc_personal_rating(self, personal_rating):
+        if not personal_rating or personal_rating == "N/A":
             return None
 
-        return float(game_data["personal_rating"])
+        return float(personal_rating)
 
     # Todo: Improve this
     def calc_weight(self, game_data):

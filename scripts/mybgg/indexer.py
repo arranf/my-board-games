@@ -234,8 +234,10 @@ class Indexer:
 
         self.index.add_documents(games)
 
+
     def delete_objects_not_in(self, collection):
         docs = self.index.get_documents({'limit':1000, 'fields': 'id'})
         collection_ids = [x.id for x in collection]
         ids_to_delete = [x["id"] for x in docs["results"] if x["id"] not in collection_ids]
-        self.index.delete_documents([ids_to_delete])
+        print("Ids to delete", ids_to_delete)
+        self.index.delete_documents(ids_to_delete)

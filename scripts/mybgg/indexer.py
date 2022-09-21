@@ -239,6 +239,6 @@ class Indexer:
         docs = self.index.get_documents({'limit':1000, 'fields': 'id'})
         collection_ids = [x.id for x in collection]
         ids_to_delete = [x["id"] for x in docs["results"] if x["id"] not in collection_ids]
-        if ids_to_delete.count() > 0:
+        if len(ids_to_delete) > 0:
             print("Ids to delete", ids_to_delete)
             self.index.delete_documents(ids_to_delete)

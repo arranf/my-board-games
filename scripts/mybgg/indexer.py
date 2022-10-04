@@ -134,6 +134,8 @@ class Indexer:
             game_name_prefix = game_name[0:game_name.index(":")]
             if game_name_prefix + ": " in expansion_name:
                 tweaked_expansion_name = tweaked_expansion_name.replace(game_name_prefix + ": ", "")
+        elif "Arkham Horror: The Card Game –" in expansion_name:
+            tweaked_expansion_name = remove_prefix(expansion_name, "Arkham Horror: The Card Game –")
         
         # Netrunner
         if "(fan expansion for Android: Netrunner)" in tweaked_expansion_name:
@@ -147,6 +149,7 @@ class Indexer:
         # Guards of Atlantis
         elif "Tabletop MOBA –" in tweaked_expansion_name:
             tweaked_expansion_name = tweaked_expansion_name.replace("Tabletop MOBA –", "")
+
 
         # Mini-Expansion
         if "Mini-Expansion" in tweaked_expansion_name:

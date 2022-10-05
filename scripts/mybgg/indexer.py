@@ -111,10 +111,16 @@ class Indexer:
 
         tweaked_expansion_name = expansion_name
 
+        ### Expansion name: Arkham Horror: The Card Game – The Dunwich Legacy: Campaign Expansion
+        ### Game name: Arkham Horror: The Card Game (Revised Edition)
+        ### -- > The Dunwich Legacy: Campaign Expansion
+        if "Arkham Horror: The Card Game –" in expansion_name:
+            tweaked_expansion_name = remove_prefix(expansion_name, "Arkham Horror: The Card Game –")
+        
         # Expansion name: Long Shot: The Dice Game – Horse Set 4 Mini-Expansion
         # Game name: Long Shot: The Dice Game 
         # --> Horse Set 4 Mini-Expansion
-        if game_name + "– " in expansion_name:
+        elif game_name + "– " in expansion_name:
             tweaked_expansion_name = remove_prefix(expansion_name, game_name + " – ")
 
         # Marvel Champions: The Card Game – Ant-Man Hero Pack
@@ -134,8 +140,7 @@ class Indexer:
             game_name_prefix = game_name[0:game_name.index(":")]
             if game_name_prefix + ": " in expansion_name:
                 tweaked_expansion_name = tweaked_expansion_name.replace(game_name_prefix + ": ", "")
-        elif "Arkham Horror: The Card Game –" in expansion_name:
-            tweaked_expansion_name = remove_prefix(expansion_name, "Arkham Horror: The Card Game –")
+        
         
         # Netrunner
         if "(fan expansion for Android: Netrunner)" in tweaked_expansion_name:

@@ -47,6 +47,7 @@ async function main() {
       )}&nosession=1&showcount=20`;
       const { data } = await axios.get(url);
       if (data.items.length === 0) {
+        console.log(`Tried to fetch ${JSON.stringify(item)}`);
         console.log(`Could not find game for ${name}`);
         process.exit(1);
       }

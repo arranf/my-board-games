@@ -13,9 +13,12 @@
     "index_name": "games"
   },
   "additional": {
+    "929": {
+      "tagline": "Get rid of your cards to rise through society from peon to Dalmuti."
+    },
     "12333": {
       "tagline": "Relive the Cold War and rewrite history in an epic clash between the USA and USSR.",
-      "rank": "15",
+      "rank": "32",
       "name": "Twilight Struggle"
     },
     "12942": {
@@ -28,7 +31,7 @@
     },
     "18745": {
       "tagline": "Will your dynasty be the one to finally bring unity to China?",
-      "rank": "73",
+      "rank": "80",
       "name": "Sun Tzu"
     },
     "23540": {
@@ -36,17 +39,17 @@
     },
     "27708": {
       "tagline": "Players act as campaign managers in this replay of the 1960 presidential election.",
-      "rank": "4",
+      "rank": "10",
       "name": "1960: The Making of the President"
     },
     "30549": {
       "tagline": "Your team of experts must prevent the world from succumbing to a viral pandemic.",
-      "rank": "76",
+      "rank": "96",
       "name": "Pandemic"
     },
     "37111": {
       "tagline": "How can the human race survive when you don't know who is actually human?",
-      "rank": "37",
+      "rank": "45",
       "name": "Battlestar Galactica: The Board Game"
     },
     "41114": {
@@ -59,37 +62,37 @@
     },
     "54043": {
       "tagline": "Trade and sell goods to become the most wealthy merchant in this short game for two.",
-      "rank": "23",
+      "rank": "21",
       "name": "Jaipur"
     },
     "54998": {
       "tagline": "Win the favor of the Gods in this competitive auction, area control game.",
-      "rank": "22",
+      "rank": "34",
       "name": "Cyclades"
     },
     "65244": {
       "tagline": "The island is sinking! Will the brave adventurers save the treasures in time?",
-      "rank": "53",
+      "rank": "44",
       "name": "Forbidden Island"
     },
     "68448": {
       "tagline": "Draft cards to develop your ancient civilization and build its Wonder of the World.",
-      "rank": "54",
+      "rank": "55",
       "name": "7 Wonders"
     },
     "93260": {
       "tagline": "Harness the magic! Summon your warrior hordes onto the field of battle.",
-      "rank": "54",
+      "rank": "90",
       "name": "Summoner Wars: Master Set"
     },
     "98778": {
       "tagline": "Everyone can see your cards but you. Can their clues help you find out what to play?",
-      "rank": "21",
+      "rank": "22",
       "name": "Hanabi"
     },
     "103343": {
       "tagline": "Make alliances—and break them!—as you strive to both unite and conquer Westeros.",
-      "rank": "60",
+      "rank": "62",
       "name": "A Game of Thrones: The Board Game (Second Edition)"
     },
     "104162": {
@@ -102,17 +105,17 @@
     },
     "115746": {
       "tagline": "The Fellowship and the Free Peoples clash with Sauron over the fate of Middle-Earth.",
-      "rank": "10",
+      "rank": "27",
       "name": "War of the Ring: Second Edition"
     },
     "118174": {
       "tagline": "Build chemical compounds before the other lab managers and before they explode!",
-      "rank": "69",
+      "rank": "101",
       "name": "Compounded"
     },
     "124742": {
       "tagline": "Megacorporation versus Netrunner in this futuristic cyberpunk game of cat and mouse.",
-      "rank": "2",
+      "rank": "7",
       "name": "Android: Netrunner"
     },
     "125153": {
@@ -120,7 +123,7 @@
     },
     "128882": {
       "tagline": "Who can you trust? A game of social deduction set in King Arthur's legendary realm.",
-      "rank": "17",
+      "rank": "28",
       "name": "The Resistance: Avalon"
     },
     "133473": {
@@ -129,7 +132,7 @@
     },
     "138161": {
       "tagline": "Find a crew. Find a job. Keep flying. Cross the 'verse to complete jobs and get paid.",
-      "rank": "59",
+      "rank": "93",
       "name": "Firefly: The Game"
     },
     "144797": {
@@ -137,7 +140,7 @@
     },
     "147949": {
       "tagline": "An app-driven Werewolf that lasts but a single night. Wolves and villagers beware!",
-      "rank": "74",
+      "rank": "77",
       "name": "One Night Ultimate Werewolf"
     },
     "151347": {
@@ -150,7 +153,7 @@
     },
     "156546": {
       "tagline": "This curated version of a classic game is guaranteed to create laughs!",
-      "rank": "29",
+      "rank": "24",
       "name": "Monikers"
     },
     "160610": {
@@ -158,12 +161,12 @@
     },
     "162886": {
       "tagline": "Island Spirits join forces using elemental powers to defend their home from invaders.",
-      "rank": "3",
+      "rank": "5",
       "name": "Spirit Island"
     },
     "163412": {
       "tagline": "Piece together a quilt and leave no holes to become the button master.",
-      "rank": "42",
+      "rank": "52",
       "name": "Patchwork"
     },
     "164153": {
@@ -176,7 +179,7 @@
     },
     "173346": {
       "tagline": "Science? Military? What will you draft to win this head-to-head version of 7 Wonders?",
-      "rank": "33",
+      "rank": "47",
       "name": "7 Wonders Duel"
     },
     "175640": {
@@ -194,12 +197,12 @@
     },
     "181161": {
       "tagline": "Can you guide another player to build bricks to match a shape shown on a card?",
-      "rank": "88",
+      "rank": "111",
       "name": "Brick Party"
     },
     "181279": {
       "tagline": "Dracula is attacking! Or is it a trick while he hides? Track him down to find out.",
-      "rank": "25",
+      "rank": "42",
       "name": "Fury of Dracula"
     },
     "183394": {
@@ -212,25 +215,25 @@
     },
     "187645": {
       "tagline": "Strike from your hidden base as the Rebels—or find and destroy it as the Empire.",
-      "rank": "11",
+      "rank": "3",
       "name": "Star Wars: Rebellion"
     },
     "192291": {
       "tagline": "Pass sushi around a bigger table and take the best dishes. Save room for dessert!",
-      "rank": "72",
+      "rank": "92",
       "name": "Sushi Go Party!"
     },
     "194655": {
       "tagline": "Use different divine powers to build and climb the towers!",
       "name": "Santorini",
-      "rank": "75"
+      "rank": "87"
     },
     "197831": {
       "tagline": "Kindle the flame; defeat enemies and bosses lest you and your party perish."
     },
     "200147": {
       "tagline": "Harmonize Japanese nature and culture elements to paint the most beautiful landscape.",
-      "rank": "58",
+      "rank": "71",
       "name": "Kanagawa"
     },
     "200511": {
@@ -238,7 +241,7 @@
     },
     "205716": {
       "tagline": "Play as corporations profiteering off crises, while negotiating to not lose it all.",
-      "rank": "70",
+      "rank": "76",
       "name": "New Angeles"
     },
     "210296": {
@@ -250,7 +253,7 @@
     "220367": {
       "tagline": "Magic railroad companies race to deliver goods.",
       "name": "Empyreal: Spells & Steam",
-      "rank": "26"
+      "rank": "33"
     },
     "221208": {
       "tagline": "Duel by drafting devastating combos to decimate your foe in this quick game.",
@@ -263,7 +266,7 @@
     "222509": {
       "tagline": "Honor the Gods, build temples, defeat monsters, and establish supremacy over Hellas.",
       "name": "Lords of Hellas",
-      "rank": "20"
+      "rank": "25"
     },
     "223040": {
       "tagline": "Build the greatest fantasy kingdom by constructing the best hand.",
@@ -273,22 +276,22 @@
     "223770": {
       "tagline": "Invest in startups but beware - you only make money by controlling popular companies!",
       "name": "Startups",
-      "rank": "31"
+      "rank": "23"
     },
     "224517": {
       "tagline": "Build networks, grow industries, and navigate the world of the Industrial Revolution.",
-      "rank": "5",
+      "rank": "4",
       "name": "Brass: Birmingham"
     },
     "230802": {
       "tagline": "Artfully embellish the walls of your palace by drafting the most beautiful tiles.",
-      "rank": "52",
+      "rank": "40",
       "name": "Azul"
     },
     "233078": {
       "tagline": "Build an intergalactic empire through trade, research, conquest and grand politics.",
       "name": "Twilight Imperium: Fourth Edition",
-      "rank": "13"
+      "rank": "16"
     },
     "237182": {
       "tagline": "Decide the fate of the forest as woodland factions fight for contrasting goals."
@@ -296,37 +299,40 @@
     "244654": {
       "tagline": "Lead your faction to take out rivals and collect magic crystals in this arena battler.",
       "name": "Wildlands",
-      "rank": "30"
+      "rank": "57"
     },
     "245655": {
       "tagline": "Leaders join in council to vote on the kingdom's issues, but with hidden motives!",
-      "rank": "45",
+      "rank": "53",
       "name": "The King's Dilemma"
     },
     "246192": {
       "tagline": "Gather energy marbles to build gizmos parts and trigger chain reactions and combos.",
       "name": "Gizmos",
-      "rank": "24"
+      "rank": "17"
+    },
+    "246900": {
+      "tagline": "Build an interstellar civilization by exploration, research, conquest, and diplomacy."
     },
     "248562": {
       "tagline": "Command armies, gather spells and artifacts as you conquer a fantasy land.",
       "name": "Mage Knight: Ultimate Edition",
-      "rank": "9"
+      "rank": "13"
     },
     "251442": {
       "tagline": "Liberate the galaxy from the tyrannical Dynasty! Or find and squash the Liberation! ",
       "name": "Liberation",
-      "rank": "81"
+      "rank": "103"
     },
     "251658": {
       "tagline": "Build the best metropolis by following the planning rules with this 18-card deck.",
       "name": "Sprawlopolis",
-      "rank": "63"
+      "rank": "79"
     },
     "255984": {
       "tagline": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea.",
       "name": "Sleeping Gods",
-      "rank": "49"
+      "rank": "60"
     },
     "257145": {
       "tagline": "Go head to head or co-op in part two of the TMNT dice sharing, card playing brawler.",
@@ -338,17 +344,17 @@
     "257614": {
       "tagline": "Victorians knew every flower has a meaning. Which flowers will you choose? ",
       "name": "Tussie Mussie",
-      "rank": "67"
+      "rank": "84"
     },
     "259061": {
       "tagline": "Draft your heroes and rally your minions to destroy the enemy Nexus.",
-      "rank": "78",
+      "rank": "99",
       "name": "Skytear"
     },
     "262211": {
       "tagline": "Use towers, minions, and heroes to help your faction claim an island in the sky.",
       "name": "Cloudspire",
-      "rank": "8"
+      "rank": "9"
     },
     "262712": {
       "tagline": "Rival mages create artifacts, vying for places of power and ancient monuments."
@@ -356,24 +362,34 @@
     "263192": {
       "tagline": "The Turtles band together as they brawl their way through their origin story.",
       "name": "Teenage Mutant Ninja Turtles Adventures: Change is Constant",
-      "rank": "40"
+      "rank": "37"
     },
     "264220": {
       "tagline": "Exploration, battle and diplomacy in a dark Arthurian realm."
     },
     "266524": {
       "tagline": "Hike through National Parks tiles, collecting memories and admiring gorgeous scenery.",
-      "rank": "55",
+      "rank": "63",
       "name": "PARKS"
+    },
+    "267609": {
+      "tagline": "A card-driven Team VS Team Battle Arena.",
+      "name": "Guards of Atlantis II",
+      "rank": "8"
+    },
+    "271055": {
+      "tagline": "Battle for control of a new fantasy realm in this worker placement game.",
+      "name": "Dwellings of Eldervale",
+      "rank": "2"
     },
     "271320": {
       "tagline": "Build your princedom into a bustling metropolis of commerce.",
       "name": "The Castles of Burgundy",
-      "rank": "16"
+      "rank": "26"
     },
     "276894": {
       "tagline": "Ride a London double decker bus when low on time with this 15 minute express version.",
-      "rank": "71",
+      "rank": "89",
       "name": "Ticket to Ride: London"
     },
     "277659": {
@@ -381,40 +397,43 @@
     },
     "277700": {
       "tagline": "Operate your own specialty goods shop with a unique set of components and mechanisms.",
-      "rank": "43",
+      "rank": "41",
       "name": "Merchants Cove"
+    },
+    "283152": {
+      "base_game_id": 156546
     },
     "284083": {
       "tagline": "Go on a planet-discovering space mission in this cooperative trick-taking game.",
-      "rank": "47",
+      "rank": "38",
       "name": "The Crew: The Quest for Planet Nine"
     },
     "284378": {
       "tagline": "EV-factory workers optimize and innovate to stand out at the big board meeting.",
       "name": "Kanban EV",
-      "rank": "32"
+      "rank": "46"
     },
     "284653": {
       "tagline": "Psychic rogue agents team up to track down the Recruiter in Zanzibar.",
-      "rank": "28",
+      "rank": "30",
       "name": "Mind MGMT: The Psychic Espionage “Game.”"
     },
     "285192": {
       "tagline": "Characters explore a medieval-fantasy land as they race to fulfill their destiny.",
-      "rank": "84",
+      "rank": "106",
       "name": "Destinies"
     },
     "285774": {
       "tagline": "Battle Marvel villains with unique teams of iconic heroes in this LCG.",
       "name": "Marvel Champions: The Card Game",
-      "rank": "12"
+      "rank": "15"
     },
     "285967": {
       "tagline": "Take the role of Egyptian gods fighting to become the one true god."
     },
     "287084": {
       "tagline": "Decide to act early or late to set traps and attack to become the most influential.",
-      "rank": "50",
+      "rank": "64",
       "name": "Oriflamme"
     },
     "290484": {
@@ -423,7 +442,7 @@
     "291453": {
       "tagline": "Poach your opponents artists and outdo each other's circus shows.",
       "name": "SCOUT",
-      "rank": "38"
+      "rank": "49"
     },
     "291572": {
       "tagline": "Change the course of history as empires rise and fall and your tale becomes legend."
@@ -431,7 +450,7 @@
     "291962": {
       "tagline": "Explore dungeons, fight villains and conquer the glory in a hack n slash adventure.",
       "name": "Paper Dungeons: A Dungeon Scrawler Game",
-      "rank": "41"
+      "rank": "48"
     },
     "295293": {
       "tagline": "The official board game based on the cult movie of 1982."
@@ -439,35 +458,40 @@
     "295374": {
       "tagline": "Bet, buy horses, and influence jockeys for cash in an exciting 1930's era horse race.",
       "name": "Long Shot: The Dice Game",
-      "rank": "19"
+      "rank": "12"
     },
     "295947": {
       "tagline": "Create the most harmonious ecosystem as you puzzle together habitats and wildlife.",
       "name": "Cascadia",
-      "rank": "48"
+      "rank": "43"
     },
     "297562": {
       "tagline": "Play as warring Egyptian Gods and build the most powerful army to dominate Egypt."
     },
     "298047": {
       "tagline": "Cooperate as Marvel Heroes to stop the Villains' master plans!",
-      "rank": "51",
+      "rank": "65",
       "name": "Marvel United"
     },
     "300521": {
       "tagline": "Heroes try to escape the dungeon while the Sorcerer uses his magic to stop them.",
       "name": "Rush Out!",
-      "rank": "68"
+      "rank": "94"
     },
     "304783": {
       "tagline": "Compete as one of six Roman Generals in charge of a milecastle along Hadrian's Wall.",
       "name": "Hadrian's Wall",
-      "rank": "46"
+      "rank": "85"
+    },
+    "307305": {
+      "tagline": "Space heroines defend Planet Earth in falling-block battles.",
+      "name": "Bullet♥︎",
+      "rank": "100"
     },
     "309110": {
       "tagline": "Influence the wildlife and arrange their meals, so there is only one animal left.",
       "name": "Food Chain Island",
-      "rank": "34"
+      "rank": "19"
     },
     "313261": {
       "tagline": "The tussle for the throne intensifies as resentment piles up.",
@@ -479,29 +503,37 @@
     "316287": {
       "tagline": "An all-new social deduction game based on The Resistance: Avalon.",
       "name": "Quest",
-      "rank": "57"
+      "rank": "31"
     },
     "317457": {
       "tagline": "Delight visitors in a park populated by homegrown dinos. Safety waivers recommended!",
-      "rank": "27",
+      "rank": "20",
       "name": "Dinosaur World"
     },
     "318009": {
       "tagline": "Draw the most exciting dinosaur theme park known to humankind.",
-      "rank": "7",
+      "rank": "11",
       "name": "Dinosaur Island: Rawr 'n Write"
     },
     "319966": {
       "tagline": "A subtle game of shifting power and control over medieval Britain."
     },
+    "324513": {
+      "tagline": "Frank Miller's The Dark Knight Returns gets adapted for the tabletop."
+    },
     "335240": {
       "tagline": "Why roll and write, when you can roll and FIGHT?",
       "name": "Vengeance: Roll & Fight – Episode 1",
-      "rank": "65"
+      "rank": "72"
     },
     "335664": {
       "tagline": "Why roll and write, when you can roll and FIGHT?",
       "base_game_id": 335240
+    },
+    "339532": {
+      "tagline": "Master the potential of your hero’s crests and prove that you are a true champion.",
+      "name": "Battlecrest: Fellwoods Base Game",
+      "rank": "78"
     },
     "341165": {
       "tagline": "Form alliances, collect spice, avoid worms, enter treacherous battles, control DUNE."
@@ -509,12 +541,12 @@
     "342562": {
       "tagline": "In the far reaches of space where humankind still dares not go, a ROVE is deployed.",
       "name": "ROVE: Results-Oriented Versatile Explorer",
-      "rank": "80"
+      "rank": "107"
     },
     "344682": {
       "tagline": "After the Heist of the Century, a gang splits the loot by playing a brand new game.",
       "name": "The Split",
-      "rank": "79"
+      "rank": "102"
     },
     "345976": {
       "tagline": "Set in a dystopian future, the race between Megacorporation and Netrunner continues.",
@@ -522,47 +554,31 @@
       "rank": "6",
       "base_game_id": 124742
     },
+    "353470": {
+      "tagline": "Danger and deception await you in the lair of the galaxy’s most notorious gangster.",
+      "name": "Star Wars: Jabba's Palace",
+      "rank": "50"
+    },
     "355135": {
       "tagline": "You can finally take control of a Blaseball team to nudge it to victory."
     },
-    "267609": {
-      "tagline": "A card-driven Team VS Team Battle Arena."
-    },
-    "361545": {
-      "tagline": "Roll your way through the Twilight Imperium universe."
-    },
     "359609": {
-      "tagline": "Investigate the horrors of Arkham while courting cosmic doom."
-    },
-    "353470": {
-      "tagline": "Danger and deception await you in the lair of the galaxy’s most notorious gangster."
-    },
-    "339532": {
-      "tagline": "Master the potential of your hero’s crests and prove that you are a true champion."
-    },
-    "367525": {
-      "tagline": "Build a posse to steal valuable technology in an alternate history Wild West."
-    },
-    "324513": {
-      "tagline": "Frank Miller's The Dark Knight Returns gets adapted for the tabletop."
-    },
-    "246900": {
-      "tagline": "Build an interstellar civilization by exploration, research, conquest, and diplomacy."
-    },
-    "929": {
-      "tagline": "Get rid of your cards to rise through society from peon to Dalmuti."
+      "tagline": "Investigate the horrors of Arkham while courting cosmic doom.",
+      "name": "Arkham Horror: The Card Game (Revised Edition)",
+      "rank": "29"
     },
     "360152": {
       "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game."
     },
-    "271055": {
-      "tagline": "Battle for control of a new fantasy realm in this worker placement game."
+    "361545": {
+      "tagline": "Roll your way through the Twilight Imperium universe.",
+      "name": "Twilight Inscription",
+      "rank": "81"
     },
-    "307305": {
-      "tagline": "Space heroines defend Planet Earth in falling-block battles."
-    },
-    "283152": {
-      "base_game_id": 156546
+    "367525": {
+      "tagline": "Build a posse to steal valuable technology in an alternate history Wild West.",
+      "name": "3000 Scoundrels",
+      "rank": "91"
     }
   }
 }

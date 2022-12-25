@@ -25,7 +25,10 @@ class Indexer:
                 'players.level2',
                 'players.level3',
                 'playing_time',
-                'weight'
+                'weight',
+                'personal_rating',
+                'personal_rank',
+                'rating'
             ],
             'searchableAttributes': [
                 'name',

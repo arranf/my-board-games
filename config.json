@@ -568,7 +568,11 @@
       "rank": "29"
     },
     "360152": {
-      "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game."
+      "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game.",
+      "base_game_id": 348406
+    },
+    "360153": {
+      "base_game_id": 348406
     },
     "361545": {
       "tagline": "Roll your way through the Twilight Imperium universe.",
@@ -579,6 +583,15 @@
       "tagline": "Build a posse to steal valuable technology in an alternate history Wild West.",
       "name": "3000 Scoundrels",
       "rank": "91"
+    },
+    "348406": {
+      "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game."
+    },
+    "302524": {
+      "tagline": "Roll dice and ricochet around a diverse series of thematic pinball tables."
+    },
+    "253344": {
+      "tagline": "Disrupt the ritual and slay the Elder Gods in this co-op dice chucker."
     }
   }
 }

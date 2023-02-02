@@ -10,7 +10,8 @@ from requests_cache import CachedSession
 logger = logging.getLogger(__name__)
 
 class BGGClient:
-    BASE_URL = "https://www.boardgamegeek.com/xmlapi2"
+    BASE_XML_URL = "https://www.boardgamegeek.com/xmlapi2"
+    BASE_JSON_URL = "https://www.boardgamegeek.com/api"
 
     def __init__(self, cache=None, debug=False):
         if not cache:
@@ -54,6 +55,12 @@ class BGGClient:
             new_plays = self._plays_to_games(data)
 
         return all_plays
+    
+    def tags(self):
+        data = self._make_request_json("/tags")
+        return data['mytags']
+        
+    
 
     def game_list(self, game_ids):
         if not game_ids:
@@ -75,7 +82,7 @@ class BGGClient:
     def _make_request(self, url, params={}, tries=0):
 
         try:
-            response = self.requester.get(BGGClient.BASE_URL + url, params=params)
+            response = self.requester.get(BGGClient.BASE_XML_URL + url, params=params)
         except (requests.exceptions.ConnectionError, requests.exceptions.ChunkedEncodingError):
             if tries < 3:
                 time.sleep(2)
@@ -119,6 +126,47 @@ class BGGClient:
             )
 
         return response.text
+    
+    def _make_request_json(self, url, params={}, tries=0):
+
+        try:
+            response = self.requester.get(BGGClient.BASE_JSON_URL + url, params=params)
+        except (requests.exceptions.ConnectionError, requests.exceptions.ChunkedEncodingError):
+            if tries < 3:
+                time.sleep(2)
+                return self._make_request_json(url, params=params, tries=tries + 1)
+
+            raise BGGException("BGG API closed the connection prematurely, please try again...")
+
+        logger.debug("REQUEST: " + response.url)
+        logger.debug("RESPONSE: \n" + response.text)
+
+        if response.status_code != 200:
+
+            # Handle 202 Accepted
+            if response.status_code == 202:
+                if tries < 10:
+                    time.sleep(5)
+                    return self._make_request_json(url, params=params, tries=tries + 1)
+
+            # Handle 504 Gateway Timeout
+            if response.status_code == 540:
+                if tries < 3:
+                    time.sleep(2)
+                    return self._make_request_json(url, params=params, tries=tries + 1)
+
+            # Handle 429 Too Many Requests
+            if response.status_code == 429:
+                if tries < 3:
+                    logger.debug("BGG returned \"Too Many Requests\", waiting 30 seconds before trying again...")
+                    time.sleep(30)
+                    return self._make_request_json(url, params=params, tries=tries + 1)
+
+            raise BGGException(
+                f"BGG returned status code {response.status_code} when requesting {response.url}"
+            )
+
+        return response.json()
 
     def _plays_to_games(self, data):
         def after_players_hook(_, status):
@@ -168,7 +216,7 @@ class BGGClient:
                         xml.string(".", attribute="wanttobuy"),
                         xml.string(".", attribute="wanttoplay"),
                         xml.string(".", attribute="wishlist"),
-                    ], alias='tags', hooks=xml.Hooks(after_parse=after_status_hook)),
+                    ], alias='collectionstatus', hooks=xml.Hooks(after_parse=after_status_hook)),
                     xml.string("privateinfo", attribute="acquisitiondate", required=False, alias="lastmodified"),
                     xml.integer("numplays"),
                 ], required=False, alias="items"),

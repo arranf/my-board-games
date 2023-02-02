@@ -39,9 +39,15 @@ class Downloader():
             user_name=user_name,
         )
 
-        game_list_data = self.client.game_list([game_in_collection["id"] for game_in_collection in collection_data])
+        game_ids = [game_in_collection["id"] for game_in_collection in collection_data]
+        tags_data = self.client.tags()
+        game_id_to_tags = {tag["pinid"]: [] for tag in tags_data}
+        for tag in tags_data:
+            game_id_to_tags[tag["pinid"]].append(tag["rawtag"])
+
+        game_list_data = self.client.game_list(game_ids)
         game_id_to_personal_rating = {game["id"]: game["personal_rating"] for game in collection_data}
-        game_id_to_tags = {game["id"]: game["tags"] for game in collection_data}
+        game_id_to_collectionstatus = {game["id"]: game["collectionstatus"] for game in collection_data}
         game_id_to_image = {game["id"]: game["image_version"] or game["image"] for game in collection_data}
         game_id_to_thumbnail = {game["id"]: game["thumbnail"] for game in collection_data}
         game_id_to_numplays = {game["id"]: game["numplays"] for game in collection_data}
@@ -76,7 +82,7 @@ class Downloader():
                 personal_rating=game_id_to_personal_rating[game_data["id"]],
                 image=game_id_to_image[game_data["id"]],
                 thumbnail=game_id_to_thumbnail[game_data["id"]],
-                tags=game_id_to_tags[game_data["id"]],
+                collectionstatus=game_id_to_collectionstatus[game_data["id"]],
                 numplays=game_id_to_numplays[game_data["id"]],
                 lastmodified = game_id_to_lastmodified[game_data["id"] or '2012-12-25'],
                 previous_players=game_id_to_players[game_data["id"]],
@@ -84,7 +90,8 @@ class Downloader():
                     BoardGame(expansion_data)
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
-                additional_info=None if additional_info is None else additional_info.get(str(game_data["id"]))
+                additional_info=None if additional_info is None else additional_info.get(str(game_data["id"])),
+                tags=game_id_to_image[game_data["id"]]
             )
             for game_data in games_data
         ]

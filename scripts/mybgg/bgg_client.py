@@ -56,9 +56,12 @@ class BGGClient:
 
         return all_plays
     
-    def tags(self):
-        data = self._make_request_json("/tags")
-        return data['mytags']
+    def tags(self, game_ids):
+        tag_data = {}
+        for game_id in game_ids:
+            data = self._make_request_json("/tags", {'objectid': game_id, 'objecttype': 'thing'})
+            tag_data[game_id] = [tag['rawtag'] for tag in data['mytags']]
+        return tag_data
         
     
 

@@ -40,10 +40,7 @@ class Downloader():
         )
 
         game_ids = [game_in_collection["id"] for game_in_collection in collection_data]
-        tags_data = self.client.tags()
-        game_id_to_tags = {tag["pinid"]: [] for tag in tags_data}
-        for tag in tags_data:
-            game_id_to_tags[tag["pinid"]].append(tag["rawtag"])
+        game_id_to_tags = self.client.tags(game_ids)
 
         game_list_data = self.client.game_list(game_ids)
         game_id_to_personal_rating = {game["id"]: game["personal_rating"] for game in collection_data}
@@ -91,7 +88,7 @@ class Downloader():
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
                 additional_info=None if additional_info is None else additional_info.get(str(game_data["id"])),
-                tags=game_id_to_tags[game_data["id"]]
+                tags=game_id_to_tags.get(game_data["id"])
             )
             for game_data in games_data
         ]

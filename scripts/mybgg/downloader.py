@@ -91,7 +91,7 @@ class Downloader():
                     for expansion_data in game_id_to_expansion[game_data["id"]]
                 ],
                 additional_info=None if additional_info is None else additional_info.get(str(game_data["id"])),
-                tags=game_id_to_image[game_data["id"]]
+                tags=game_id_to_tags[game_data["id"]]
             )
             for game_data in games_data
         ]

@@ -600,10 +600,20 @@
       "tagline": "It's a cockroach. It's a fly. Will you call the bluff or pass on a trick of your own?"
     },
     "215": {
-      "tagline": "Be the first team to empty your hands in this popular partnership climbing card game."
+      "tagline": "Be the first team to empty your hands in this popular partnership climbing card game.",
+      "rgb": "210,59,43"
     },
     "315610": {
       "tagline": "To stop the Darkness, you'll have to descend to a place light has never touched."
+    },
+    "346742": {
+      "tagline": "You'll have a great fishing day on the lake!"
+    },
+    "129294": {
+      "tagline": "Campaign to score electoral votes as you vie for the Presidency of the United States."
+    },
+    "362944": {
+      "tagline": "Take control of the Free Peoples or the Shadow Armies."
     }
   }
 }

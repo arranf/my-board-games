@@ -28,9 +28,11 @@ class BoardGame:
 
         self.personal_rank = None
         self.tagline = None
+        self.rgb = None
 
         if additional_info is None:
             return
+        self.rgb = additional_info.get('rgb')
         self.tagline = additional_info.get('tagline')
         personal_rank = additional_info.get('rank')
         if personal_rank is not None:

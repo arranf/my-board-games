@@ -189,8 +189,9 @@ class Indexer:
         for i, game in enumerate(games):
             if i != 0 and i % 10 == 0:
                 print(f"Evaluated {i} of {len(games)} games...")
-
-            if game["image"]:
+            if game["rgb"]:
+                game["color"] = game["rgb"]
+            elif game["image"]:
                 image_data = self.fetch_image(game["image"])
                 if image_data:
                     image = Image.open(io.BytesIO(image_data)).convert('RGBA')

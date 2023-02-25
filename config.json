@@ -276,12 +276,14 @@
     "223770": {
       "tagline": "Invest in startups but beware - you only make money by controlling popular companies!",
       "name": "Startups",
+      "rgb": "230, 0, 86",
       "rank": "23"
     },
     "224517": {
       "tagline": "Build networks, grow industries, and navigate the world of the Industrial Revolution.",
       "rank": "4",
-      "name": "Brass: Birmingham"
+      "name": "Brass: Birmingham",
+      "rgb": "79, 79, 79"
     },
     "230802": {
       "tagline": "Artfully embellish the walls of your palace by drafting the most beautiful tiles.",
@@ -491,7 +493,8 @@
     "309110": {
       "tagline": "Influence the wildlife and arrange their meals, so there is only one animal left.",
       "name": "Food Chain Island",
-      "rank": "19"
+      "rank": "19",
+      "rgb": "30, 94, 86"
     },
     "313261": {
       "tagline": "The tussle for the throne intensifies as resentment piles up.",
@@ -519,7 +522,8 @@
       "tagline": "A subtle game of shifting power and control over medieval Britain."
     },
     "324513": {
-      "tagline": "Frank Miller's The Dark Knight Returns gets adapted for the tabletop."
+      "tagline": "Frank Miller's The Dark Knight Returns gets adapted for the tabletop.",
+      "rgb": "0, 43, 55"
     },
     "335240": {
       "tagline": "Why roll and write, when you can roll and FIGHT?",
@@ -591,13 +595,15 @@
       "tagline": "Roll dice and ricochet around a diverse series of thematic pinball tables."
     },
     "253344": {
-      "tagline": "Disrupt the ritual and slay the Elder Gods in this co-op dice chucker."
+      "tagline": "Disrupt the ritual and slay the Elder Gods in this co-op dice chucker.",
+      "rgb": "50, 54, 58"
     },
     "220": {
       "tagline": "Show off by splurging on expensive indulgences, but avoid overspending and scandal."
     },
     "11971": {
-      "tagline": "It's a cockroach. It's a fly. Will you call the bluff or pass on a trick of your own?"
+      "tagline": "It's a cockroach. It's a fly. Will you call the bluff or pass on a trick of your own?",
+      "rgb": "230, 86, 54"
     },
     "215": {
       "tagline": "Be the first team to empty your hands in this popular partnership climbing card game.",
@@ -635,6 +641,9 @@
     },
     "329082": {
       "tagline": "Post-apocalyptic bands of punks fight to destroy the rival tribe's camps."
+    },
+    "316624": {
+      "tagline": "A game of blackmail and betrayal, murder and mayhem, danger and destruction."
     }
   }
 }

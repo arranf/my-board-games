@@ -12,6 +12,7 @@
     "app_address": "https://search.arranfrance.com",
     "index_name": "games"
   },
+  "excluded": [17226],
   "additional": {
     "929": {
       "tagline": "Get rid of your cards to rise through society from peon to Dalmuti."
@@ -25,9 +26,6 @@
       "tagline": "Take a card each round, or pay to say no; grab the right cards to lower your score.",
       "name": "No Thanks!",
       "rank": "18"
-    },
-    "17226": {
-      "tagline": "Heroes band together to defeat the Overlord and his minions in epic dungeon battles."
     },
     "18745": {
       "tagline": "Will your dynasty be the one to finally bring unity to China?",
@@ -162,7 +160,10 @@
     "162886": {
       "tagline": "Island Spirits join forces using elemental powers to defend their home from invaders.",
       "rank": "5",
-      "name": "Spirit Island"
+      "name": "Spirit Island",
+      "players": {
+        "4": "not_recommended"
+      }
     },
     "163412": {
       "tagline": "Piece together a quilt and leave no holes to become the button master.",
@@ -208,7 +209,12 @@
     "183394": {
       "tagline": "Create the most prosperous winery in Italy from the Tuscan vineyard you've inherited.",
       "name": "Viticulture Essential Edition",
-      "rank": "36"
+      "rank": "36",
+      "players": {
+        "1": "not_recommended",
+        "5": "not_recommended",
+        "6": "not_recommended"
+      }
     },
     "184267": {
       "tagline": "Be a part of the first Martian colony, striving to be the best contributor."
@@ -266,12 +272,18 @@
     "222509": {
       "tagline": "Honor the Gods, build temples, defeat monsters, and establish supremacy over Hellas.",
       "name": "Lords of Hellas",
-      "rank": "25"
+      "rank": "25",
+      "players": {
+        "2": "not_recommended"
+      }
     },
     "223040": {
       "tagline": "Build the greatest fantasy kingdom by constructing the best hand.",
       "name": "Fantasy Realms",
-      "rank": "6"
+      "rank": "6",
+      "players": {
+        "5": "not_recommended"
+      }
     },
     "223770": {
       "tagline": "Invest in startups but beware - you only make money by controlling popular companies!",
@@ -314,12 +326,16 @@
       "rank": "17"
     },
     "246900": {
-      "tagline": "Build an interstellar civilization by exploration, research, conquest, and diplomacy."
+      "tagline": "Build an interstellar civilization by exploration, research, conquest, and diplomacy.",
+      "rgb": "113, 148, 170"
     },
     "248562": {
       "tagline": "Command armies, gather spells and artifacts as you conquer a fantasy land.",
       "name": "Mage Knight: Ultimate Edition",
-      "rank": "13"
+      "rank": "13",
+      "players": {
+        "3": "not_recommended"
+      }
     },
     "251442": {
       "tagline": "Liberate the galaxy from the tyrannical Dynasty! Or find and squash the Liberation! ",
@@ -334,7 +350,10 @@
     "255984": {
       "tagline": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea.",
       "name": "Sleeping Gods",
-      "rank": "60"
+      "rank": "60",
+      "players": {
+        "3": "not_recommended"
+      }
     },
     "257145": {
       "tagline": "Go head to head or co-op in part two of the TMNT dice sharing, card playing brawler.",
@@ -346,7 +365,12 @@
     "257614": {
       "tagline": "Victorians knew every flower has a meaning. Which flowers will you choose? ",
       "name": "Tussie Mussie",
-      "rank": "84"
+      "rank": "84",
+      "players": {
+        "1": "not_recommended",
+        "3": "not_recommended",
+        "4": "not_recommended"
+      }
     },
     "259061": {
       "tagline": "Draft your heroes and rally your minions to destroy the enemy Nexus.",
@@ -356,7 +380,10 @@
     "262211": {
       "tagline": "Use towers, minions, and heroes to help your faction claim an island in the sky.",
       "name": "Cloudspire",
-      "rank": "9"
+      "rank": "9",
+      "players": {
+        "3": "not_recommended"
+      }
     },
     "262712": {
       "tagline": "Rival mages create artifacts, vying for places of power and ancient monuments."
@@ -364,7 +391,11 @@
     "263192": {
       "tagline": "The Turtles band together as they brawl their way through their origin story.",
       "name": "Teenage Mutant Ninja Turtles Adventures: Change is Constant",
-      "rank": "37"
+      "rank": "37",
+      "players": {
+        "2": "best",
+        "3": "best"
+      }
     },
     "264220": {
       "tagline": "Exploration, battle and diplomacy in a dark Arthurian realm."
@@ -377,7 +408,10 @@
     "267609": {
       "tagline": "A card-driven Team VS Team Battle Arena.",
       "name": "Guards of Atlantis II",
-      "rank": "8"
+      "rank": "8",
+      "players": {
+        "2": "recommended"
+      }
     },
     "271055": {
       "tagline": "Battle for control of a new fantasy realm in this worker placement game.",
@@ -387,7 +421,10 @@
     "271320": {
       "tagline": "Build your princedom into a bustling metropolis of commerce.",
       "name": "The Castles of Burgundy",
-      "rank": "26"
+      "rank": "26",
+      "players": {
+        "4": "not_recommended"
+      }
     },
     "276894": {
       "tagline": "Ride a London double decker bus when low on time with this 15 minute express version.",
@@ -418,7 +455,10 @@
     "284653": {
       "tagline": "Psychic rogue agents team up to track down the Recruiter in Zanzibar.",
       "rank": "30",
-      "name": "Mind MGMT: The Psychic Espionage “Game.”"
+      "name": "Mind MGMT: The Psychic Espionage “Game.”",
+      "players": {
+        "5": "recommended"
+      }
     },
     "285192": {
       "tagline": "Characters explore a medieval-fantasy land as they race to fulfill their destiny.",
@@ -428,7 +468,10 @@
     "285774": {
       "tagline": "Battle Marvel villains with unique teams of iconic heroes in this LCG.",
       "name": "Marvel Champions: The Card Game",
-      "rank": "15"
+      "rank": "15",
+      "players": {
+        "3": "not_recommended"
+      }
     },
     "285967": {
       "tagline": "Take the role of Egyptian gods fighting to become the one true god."
@@ -460,7 +503,10 @@
     "295374": {
       "tagline": "Bet, buy horses, and influence jockeys for cash in an exciting 1930's era horse race.",
       "name": "Long Shot: The Dice Game",
-      "rank": "12"
+      "rank": "12",
+      "players": {
+        "1": "not_recommended"
+      }
     },
     "295947": {
       "tagline": "Create the most harmonious ecosystem as you puzzle together habitats and wildlife.",
@@ -511,7 +557,10 @@
     "317457": {
       "tagline": "Delight visitors in a park populated by homegrown dinos. Safety waivers recommended!",
       "rank": "20",
-      "name": "Dinosaur World"
+      "name": "Dinosaur World",
+      "players": {
+        "4": "not_recommended"
+      }
     },
     "318009": {
       "tagline": "Draw the most exciting dinosaur theme park known to humankind.",
@@ -523,7 +572,10 @@
     },
     "324513": {
       "tagline": "Frank Miller's The Dark Knight Returns gets adapted for the tabletop.",
-      "rgb": "0, 43, 55"
+      "rgb": "0, 43, 55",
+      "players": {
+        "2": "not_recommended"
+      }
     },
     "335240": {
       "tagline": "Why roll and write, when you can roll and FIGHT?",
@@ -537,7 +589,8 @@
     "339532": {
       "tagline": "Master the potential of your hero’s crests and prove that you are a true champion.",
       "name": "Battlecrest: Fellwoods Base Game",
-      "rank": "78"
+      "rank": "78",
+      "rgb": "95, 153, 159"
     },
     "341165": {
       "tagline": "Form alliances, collect spice, avoid worms, enter treacherous battles, control DUNE."
@@ -569,7 +622,11 @@
     "359609": {
       "tagline": "Investigate the horrors of Arkham while courting cosmic doom.",
       "name": "Arkham Horror: The Card Game (Revised Edition)",
-      "rank": "29"
+      "rank": "29",
+      "players": {
+        "3": "not_recommended",
+        "4": "not_recommended"
+      }
     },
     "360152": {
       "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game.",
@@ -592,7 +649,12 @@
       "tagline": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game."
     },
     "302524": {
-      "tagline": "Roll dice and ricochet around a diverse series of thematic pinball tables."
+      "tagline": "Roll dice and ricochet around a diverse series of thematic pinball tables.",
+      "players": {
+        "2": "not_recommended",
+        "3": "not_recommended",
+        "4": "not_recommended"
+      }
     },
     "253344": {
       "tagline": "Disrupt the ritual and slay the Elder Gods in this co-op dice chucker.",
@@ -610,7 +672,10 @@
       "rgb": "210,59,43"
     },
     "315610": {
-      "tagline": "To stop the Darkness, you'll have to descend to a place light has never touched."
+      "tagline": "To stop the Darkness, you'll have to descend to a place light has never touched.",
+      "players": {
+        "1": "not_recommended"
+      }
     },
     "346742": {
       "tagline": "You'll have a great fishing day on the lake!"

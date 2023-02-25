@@ -18,7 +18,7 @@ class Downloader():
                 debug=debug,
             )
 
-    def collection(self, user_name, password, additional_info, extra_params):
+    def collection(self, user_name, password, additional_info, extra_params, exclude):
         self.client.login(user_name=user_name, password=password)
         collection_data = []
         plays_data = []
@@ -39,7 +39,7 @@ class Downloader():
             user_name=user_name,
         )
 
-        game_ids = [game_in_collection["id"] for game_in_collection in collection_data]
+        game_ids = [game_in_collection["id"] for game_in_collection in collection_data if game_in_collection["id"] not in exclude]
         game_id_to_tags = self.client.tags(game_ids)
 
         game_list_data = self.client.game_list(game_ids)

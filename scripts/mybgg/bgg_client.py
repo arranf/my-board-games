@@ -247,8 +247,8 @@ class BGGClient:
             return "recommended"
 
         def suggested_numplayers(_, numplayers):
-            # Remove not_recommended player counts
-            numplayers = [players for players in numplayers if players["result"] != "not_recommended"]
+            # Remove not_recommended player counts and counts like "2+"
+            numplayers = [players for players in numplayers if not players["result"].endswith('+')]
 
             # If there's only one player count, that's the best one
             if len(numplayers) == 1:

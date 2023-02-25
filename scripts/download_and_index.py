@@ -16,7 +16,8 @@ def main(args):
         user_name=SETTINGS["boardgamegeek"]["user_name"],
         password=args.password,
         additional_info=SETTINGS["additional"],
-        extra_params=SETTINGS["boardgamegeek"]["extra_params"]
+        extra_params=SETTINGS["boardgamegeek"]["extra_params"],
+        exclude=SETTINGS["excluded"]
     )
     
     num_games = len(collection)

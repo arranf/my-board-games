@@ -684,7 +684,10 @@
       "tagline": "Campaign to score electoral votes as you vie for the Presidency of the United States."
     },
     "362944": {
-      "tagline": "Take control of the Free Peoples or the Shadow Armies."
+      "tagline": "Take control of the Free Peoples or the Shadow Armies.",
+      "players": {
+        "3": "recommended"
+      }
     },
     "249259": {
       "tagline": "Recruit, bolster and maneuver your way to controlling the hex-grid battlefield."
@@ -708,7 +711,11 @@
       "tagline": "Post-apocalyptic bands of punks fight to destroy the rival tribe's camps."
     },
     "316624": {
-      "tagline": "A game of blackmail and betrayal, murder and mayhem, danger and destruction."
+      "tagline": "A game of blackmail and betrayal, murder and mayhem, danger and destruction.",
+      "players": {
+        "2": "recommended",
+        "6": "not_recommended"
+      }
     }
   }
 }

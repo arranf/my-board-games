@@ -34,6 +34,9 @@ class BoardGame:
             return
         self.rgb = additional_info.get('rgb')
         self.tagline = additional_info.get('tagline')
+        image = additional_info.get('image')
+        if image is not None:
+            self.image = image
         personal_rank = additional_info.get('rank')
         if personal_rank is not None:
             self.personal_rank = int(personal_rank)
@@ -55,7 +58,7 @@ class BoardGame:
 
         # Remove not_recommended player counts, possibly added by overrides
         for player_count, recommendation in list(num_players.items()):
-            if recommendation == "not_recommended":
+            if recommendation == "not_recommended" or player_count == "0":
                 num_players.pop(player_count)
 
         num_players = [(k, v) for k, v in num_players.items()]

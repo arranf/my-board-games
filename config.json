@@ -20,7 +20,8 @@
     "12333": {
       "tagline": "Relive the Cold War and rewrite history in an epic clash between the USA and USSR.",
       "rank": "32",
-      "name": "Twilight Struggle"
+      "name": "Twilight Struggle",
+      "image": "https://cf.geekdo-images.com/pNCiUUphnoeWOYfsWq0kng__imagepagezoom/img/WNIKo8BdPon4vsBwnlrRE_ooFfc=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic3530661.jpg"
     },
     "12942": {
       "tagline": "Take a card each round, or pay to say no; grab the right cards to lower your score.",
@@ -61,7 +62,8 @@
     "54043": {
       "tagline": "Trade and sell goods to become the most wealthy merchant in this short game for two.",
       "rank": "21",
-      "name": "Jaipur"
+      "name": "Jaipur",
+      "image": "https://cf.geekdo-images.com/_LTujSe_o16nvjDC-J0seA__imagepage/img/X7qZxqheM7_ADLuPhC11b_9IhYw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5100947.jpg"
     },
     "54998": {
       "tagline": "Win the favor of the Gods in this competitive auction, area control game.",
@@ -96,7 +98,8 @@
     "104162": {
       "tagline": "Fight monsters and upgrade your characters in an all-vs-Overlord fantasy campaign.",
       "rank": "39",
-      "name": "Descent: Journeys in the Dark (Second Edition)"
+      "name": "Descent: Journeys in the Dark (Second Edition)",
+      "image": "https://cf.geekdo-images.com/ZN2rpiJ19lg5DZk_iYMMkQ__imagepagezoom/img/bQKp-YYl490RW33dfMydW4cxHmA=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic1180640.jpg"
     },
     "110327": {
       "tagline": "Deploy agents and hire adventurers to expand your control over the city of Waterdeep."
@@ -235,7 +238,8 @@
       "rank": "87"
     },
     "197831": {
-      "tagline": "Kindle the flame; defeat enemies and bosses lest you and your party perish."
+      "tagline": "Kindle the flame; defeat enemies and bosses lest you and your party perish.",
+      "image": "https://cf.geekdo-images.com/mHQMnDL317AKXCt9LojYxw__imagepage/img/KRpJbdueGxcxhpexCAvpfY1VDgU=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3784353.jpg"
     },
     "200147": {
       "tagline": "Harmonize Japanese nature and culture elements to paint the most beautiful landscape.",
@@ -350,6 +354,7 @@
     "255984": {
       "tagline": "Voyages of the steamship \"Manticore\" and her crew on the Wandering Sea.",
       "name": "Sleeping Gods",
+      "image": "https://cf.geekdo-images.com/Zdt8l4oTBpFICsMyNof7Jg__imagepagezoom/img/-Fe0aMdqIhmKng49Dd369PgJHJI=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic5975244.png",
       "rank": "60",
       "players": {
         "3": "not_recommended"
@@ -681,7 +686,15 @@
       "tagline": "You'll have a great fishing day on the lake!"
     },
     "129294": {
-      "tagline": "Campaign to score electoral votes as you vie for the Presidency of the United States."
+      "tagline": "Campaign to score electoral votes as you vie for the Presidency of the United States.",
+      "players": {
+        "1": "not_recommended",
+        "2": "best",
+        "3": "recommended",
+        "4": "recommended",
+        "5": "not_recommended"
+      },
+      "image": "https://cf.geekdo-images.com/Hx0ZNTasdi3qtYFH6wGJuw__original/img/oGTFAgEp96Ugb0ae70Ub2hr2Wxg=/0x0/filters:format(jpeg)/pic5432364.jpg"
     },
     "362944": {
       "tagline": "Take control of the Free Peoples or the Shadow Armies.",

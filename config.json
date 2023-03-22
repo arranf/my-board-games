@@ -721,7 +721,8 @@
       "tagline": "Explore the waterways, map the land, and chart the stars in medieval Baghdad."
     },
     "329082": {
-      "tagline": "Post-apocalyptic bands of punks fight to destroy the rival tribe's camps."
+      "tagline": "Post-apocalyptic bands of punks fight to destroy the rival tribe's camps.",
+      "image": "https://cf.geekdo-images.com/YpQUtpxNtDHBF5eVcwzBtQ__imagepage/img/_KIdE-iyaUN1RqxFNbnSEeJTHq0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6478338.png"
     },
     "316624": {
       "tagline": "A game of blackmail and betrayal, murder and mayhem, danger and destruction.",
@@ -729,6 +730,12 @@
         "2": "recommended",
         "6": "not_recommended"
       }
+    },
+    "277458": {
+      "tagline": "Put down all your magnets in the circle, but that’s easier said than done. "
+    },
+    "163068": {
+      "tagline": "Magicians perform dazzling tricks for money and fame in a Victorian steampunk world."
     }
   }
 }

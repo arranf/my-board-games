@@ -619,7 +619,8 @@
     "353470": {
       "tagline": "Danger and deception await you in the lair of the galaxy’s most notorious gangster.",
       "name": "Star Wars: Jabba's Palace",
-      "rank": "50"
+      "rank": "50",
+      "image": "https://cf.geekdo-images.com/J8wVWdlnRJfZbHYpF4GLLQ__imagepagezoom/img/Gu9aL1NAIicB9yJBdNP4i8KF3ug=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic6583306.jpg"
     },
     "355135": {
       "tagline": "You can finally take control of a Blaseball team to nudge it to victory."
@@ -763,6 +764,9 @@
     },
     "681": {
       "tagline": "You choose the piece your opponent plays next. 4-in-a-row of the same attribute wins!"
+    },
+    "325555": {
+      "tagline": "Solve puzzles to gather your team and take revenge."
     }
   }
 }

@@ -58,7 +58,7 @@ class BoardGame:
 
         # Remove not_recommended player counts, possibly added by overrides
         for player_count, recommendation in list(num_players.items()):
-            if recommendation == "not_recommended" or player_count == "0":
+            if recommendation == "not_recommended" or player_count == "0" or player_count == 0:
                 num_players.pop(player_count)
 
         num_players = [(k, v) for k, v in num_players.items()]

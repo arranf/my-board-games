@@ -12,7 +12,7 @@
     "app_address": "https://search.arranfrance.com",
     "index_name": "games"
   },
-  "excluded": [17226],
+  "excluded": [17226, 377224],
   "additional": {
     "929": {
       "tagline": "Get rid of your cards to rise through society from peon to Dalmuti."

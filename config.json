@@ -805,13 +805,19 @@
     },
     "367150": {
       "tagline": "Fight for control of Arrakis and its precious Spice.",
-      "image": "https://cf.geekdo-images.com/8g4DJuws6prXaVxLAZXGuQ__imagepage/img/4x6q6autpmHxtjkdybbLFUqpTwo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6964987.png"
+      "image": "https://cf.geekdo-images.com/8g4DJuws6prXaVxLAZXGuQ__imagepage/img/4x6q6autpmHxtjkdybbLFUqpTwo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6964987.png",
+      "players": {
+        "4": "not_recommended"
+      }
     },
     "174837": {
       "tagline": "Harness the energy of a dying sun to escape the solar system before it's too late."
     },
     "239938": {
-      "tagline": "The Japanese art form of repairing broken pottery with gold lacquer."
+      "tagline": "The Japanese art form of repairing broken pottery with gold lacquer.",
+      "players": {
+        "3+": "not_recommended"
+      }
     },
     "378117": {
       "tagline": "Protect the lighthouse and keep it lit."

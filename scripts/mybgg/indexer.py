@@ -7,9 +7,9 @@ import colorgram
 import requests
 import meilisearch
 
-# Allow colorgram to read truncated files
 from PIL import Image, ImageFile
 
+# Allow colorgram to read truncated files
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 class Indexer:

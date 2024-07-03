@@ -4,7 +4,9 @@
 
 ```sh
 python3 -m venv ./venv
-pip install -r scripts/requirements.txt
+pip install -r ./scripts/requirements.txt
+# Update deps
+pip-compile ./scripts/requirements.in
 ```
 
 ## Running

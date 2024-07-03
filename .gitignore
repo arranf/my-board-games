@@ -1,6 +1,6 @@
 *.sqlite
 __pycache__
-scripts/venv
+venv
 *.csv
 title-cache.json
 node_modules/

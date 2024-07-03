@@ -3,7 +3,13 @@
 ## Setup
 
 ```sh
+python3 -m venv ./venv
 pip install -r scripts/requirements.txt
+```
+
+## Running
+
+```sh
 python scripts/download_and_index.py --apikey YOUR_MEILISEARCH_ADMIN_API_KEY`
 ```
 
@@ -16,7 +22,7 @@ Remember to use `\` to escape special characters in your password
 
 1. Save the ranking file as `rank.csv`
 2. Ensure the headings _don't_ have spaces in them!
-3. Run `./scrips/update-config-from-csv.js`
+3. Run `./scripts/update-config-from-csv.js`
 
 ## Config
 

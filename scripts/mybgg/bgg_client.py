@@ -120,7 +120,7 @@ class BGGClient:
 
         try:
             response = self.requester.get(BGGClient.BASE_JSON_URL + url, params=params)
-     response.raise_for_status()  # This will raise an exception for 4xx and 5xx status codes
+            response.raise_for_status()  # This will raise an exception for 4xx and 5xx status codes
         except (
             requests.exceptions.HTTPError,
             requests.exceptions.ConnectionError,

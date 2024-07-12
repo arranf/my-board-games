@@ -28,7 +28,8 @@ class Indexer:
                 'personal_rating',
                 'personal_rank',
                 'rating',
-                'tags'
+                'tags',
+                'mechanics'
             ],
             'searchableAttributes': [
                 'name',

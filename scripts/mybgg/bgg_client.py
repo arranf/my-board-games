@@ -84,7 +84,7 @@ class BGGClient:
 
         return games
     
-    def sleep_with_backoff_and_jitter(base_time, tries=1, jitter_factor=0.5):
+    def _sleep_with_backoff_and_jitter(base_time, tries=1, jitter_factor=0.5):
         """Sleep with exponential backoff and jitter."""
         sleep_time = base_time * 2 ** tries * random.uniform(1 - jitter_factor, 1 + jitter_factor)
         time.sleep(sleep_time)
@@ -117,14 +117,14 @@ class BGGClient:
             requests.exceptions.ChunkedEncodingError
         ):
             if tries < 10:
-                sleep_with_backoff_and_jitter(1, tries)
+                self._sleep_with_backoff_and_jitter(1, tries)
                 return self._make_request_xml(url, params=params, tries=tries + 1)
             else:
                 raise BGGException("BGG API closed the connection prematurely, please try again...")
         except requests.exceptions.TooManyRequests:
             if tries < 10:
                 logger.debug("BGG returned \"Too Many Requests\", waiting 30 seconds before trying again...")
-                sleep_with_backoff_and_jitter(30, tries)
+                self._sleep_with_backoff_and_jitter(30, tries)
                 return self._make_request_xml(url, params=params, tries=tries + 1)
             else:
                 raise BGGException(f"BGG returned status code {response.status_code} when requesting {response.url}")

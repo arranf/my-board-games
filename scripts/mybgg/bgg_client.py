@@ -75,7 +75,9 @@ class BGGClient:
                 yield iterable[i:i + n]
 
         games = []
-        for game_ids_subset in chunks(game_ids, 100):
+        # 20 is the maximum for the thing API 
+        # See: https://boardgamegeek.com/thread/3330409/article/44586126#44586126
+        for game_ids_subset in chunks(game_ids, 20):
             url = "/thing/?stats=1&id=" + ",".join([str(id_) for id_ in game_ids_subset])
             data = self._make_request(url)
             games += self._games_list_to_games(data)

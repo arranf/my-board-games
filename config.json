@@ -825,6 +825,23 @@
     },
     "360899": {
       "tagline": "An asymmetric game where you try to protect, destroy, rule, or infect Harrow County."
+    },
+    "403257": {
+      "tagline": "Test your knowledge of movies."
+    },
+    "385975": {
+      "tagline": "Control an artifact that will help with your survival in a dismal dark world."
+    },
+    "393199": {
+      "tagline": "Control an artifact that will help with your survival in a dismal dark world.",
+      "base_game_id": 385975
+    },
+    "393200": {
+      "tagline": "Control an artifact that will help with your survival in a dismal dark world.",
+      "base_game_id": 385975
+    },
+    "336794": {
+      "tagline": "Have fun watching fellow players' ships explode as you fly on to victory."
     }
   }
 }

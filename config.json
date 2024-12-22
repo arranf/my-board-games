@@ -1077,6 +1077,14 @@
     },
     "154597": {
       "tagline": "Hop, fly, crawl and keep the Hive intact to surround the enemy Queen Bee and win!"
+    },
+    "371183": {
+      "tagline": "Crash, blast, and race your way to victory around customizable tracks.",
+      "base_game_id": 424809
+    },
+    "399318": {
+      "tagline": "Learn to crash, blast, and race your way to victory.",
+      "base_game_id": 424809
     }
   }
 }

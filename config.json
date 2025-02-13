@@ -1105,10 +1105,14 @@
       "tagline": "A head-to-head battle of wits, between octopus and shark."
     },
     "405537": {
-      "tagline": "Drop only the proper items to receive reward bells...that cannot be dropped."
+      "tagline": "Drop only the proper items to receive reward bells...that cannot be dropped.",
+      "rgb": "52, 31, 126"
     },
     "329613": {
       "tagline": "A minimalist, portable paper dungeon with randomly generated levels."
+    },
+    "219650": {
+      "tagline": "Dare to tread the paths of Arydia, exploring its open world in a campaign setting."
     }
   }
 }

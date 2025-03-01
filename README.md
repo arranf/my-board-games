@@ -3,10 +3,16 @@
 ## Setup
 
 ```sh
+# Setup virtual environment
 python3 -m venv ./venv
+source ./venv/bin/activate
+
+# Install dependencies
+python -m pip install pip-tools
 pip install -r ./scripts/requirements.txt
+
 # Update deps
-pip-compile ./scripts/requirements.in
+pip-compile ./scripts/requirements.in > ./scripts/requirements.txt
 ```
 
 ## Running
@@ -29,5 +35,3 @@ Remember to use `\` to escape special characters in your password
 ## Config
 
 `config.json` stores a map of game ids to description, personal rank, and optionally a "base game". Adding a "base game" makes the game an expansion of that game.
-
-

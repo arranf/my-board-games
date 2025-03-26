@@ -24,7 +24,7 @@ python scripts/download_and_index.py --apikey YOUR_MEILISEARCH_ADMIN_API_KEY`
 ## Running (debug)
 
 Remember to use `\` to escape special characters in your password
-`python scripts/download_and_index.py --no_indexing --apikey fake --password yourpassword`
+`python scripts/download_and_index.py --no_indexing --apikey fake --debug --cache_bgg --password yourpassword`
 
 ## Updating Rankings
 

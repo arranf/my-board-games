@@ -119,14 +119,14 @@ class BGGClient:
             requests.exceptions.ChunkedEncodingError
         ):
             if tries < 10:
-                sleep_with_backoff_and_jitter(1, tries)
+                sleep_with_backoff_and_jitter(3, tries)
                 return self._make_request_xml(url, params=params, tries=tries + 1)
             else:
                 raise BGGException("BGG API closed the connection prematurely, please try again...")
         except requests.exceptions.TooManyRequests:
             if tries < 10:
                 logger.debug("BGG returned \"Too Many Requests\", waiting 30 seconds before trying again...")
-                sleep_with_backoff_and_jitter(30, tries)
+                sleep_with_backoff_and_jitter(45, tries)
                 return self._make_request_xml(url, params=params, tries=tries + 1)
             else:
                 raise BGGException(f"BGG returned status code {response.status_code} when requesting {response.url}")

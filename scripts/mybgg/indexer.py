@@ -165,9 +165,13 @@ class Indexer:
             tweaked_expansion_name = tweaked_expansion_name.replace("Mini-Expansion", "")
         elif "Mini Expansion" in tweaked_expansion_name:
             tweaked_expansion_name = tweaked_expansion_name.replace("Mini Expansion", "")
+
+            
         # Expansion
         elif tweaked_expansion_name.endswith("Expansion"):
             tweaked_expansion_name = tweaked_expansion_name.replace("Expansion", "")
+        elif tweaked_expansion_name.endswith("Expansion Pack"):
+            tweaked_expansion_name = tweaked_expansion_name.replace("Expansion Pack", "")
 
         return tweaked_expansion_name.strip()
 

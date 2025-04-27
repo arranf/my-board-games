@@ -1121,7 +1121,10 @@
       "tagline": "Travel from the Shire and overcome every obstacle as a team."
     },
     "427345": {
-      "tagline": "Build artifacts to claim monuments and places of power in this standalone/expansion."
+      "tagline": "Build artifacts to claim monuments and places of power in this standalone/expansion.",
+      "players": {
+        "2": "best"
+      }
     },
     "406652": {
       "tagline": "Competing AIs stack themed ideas to compile three protocols quickly."
